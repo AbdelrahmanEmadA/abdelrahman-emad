@@ -1,0 +1,66 @@
+[
+  {
+    "file": "video/v01.mp4",
+    "poster": "video/v01_poster.webp",
+    "title": "First Cola",
+    "w": 608,
+    "h": 1080,
+    "duration": 64.67
+  },
+  {
+    "file": "video/v02.mp4",
+    "poster": "video/v02_poster.webp",
+    "title": "Bubble Gun",
+    "w": 608,
+    "h": 1080,
+    "duration": 78.29
+  },
+  {
+    "file": "video/v03.mp4",
+    "poster": "video/v03_poster.webp",
+    "title": "Buggy",
+    "w": 608,
+    "h": 1080,
+    "duration": 62.63
+  },
+  {
+    "file": "video/v04.mp4",
+    "poster": "video/v04_poster.webp",
+    "title": "Drawing Tablet",
+    "w": 608,
+    "h": 1080,
+    "duration": 46.88
+  },
+  {
+    "file": "video/v05.mp4",
+    "poster": "video/v05_poster.webp",
+    "title": "Magnetic Lego",
+    "w": 608,
+    "h": 1080,
+    "duration": 90.92
+  },
+  {
+    "file": "video/v06.mp4",
+    "poster": "video/v06_poster.webp",
+    "title": "Police Car Toy",
+    "w": 608,
+    "h": 1080,
+    "duration": 120.71
+  },
+  {
+    "file": "video/v07.mp4",
+    "poster": "video/v07_poster.webp",
+    "title": "World Cup with Schneider",
+    "w": 608,
+    "h": 1080,
+    "duration": 50.5
+  },
+  {
+    "file": "video/v09.mp4",
+    "poster": "video/v09_poster.webp",
+    "title": "The Big Boss",
+    "w": 608,
+    "h": 1080,
+    "duration": 53.46
+  }
+]

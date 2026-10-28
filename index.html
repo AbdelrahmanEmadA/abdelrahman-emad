@@ -1,0 +1,2099 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdelrahman Emad Portfolio</title>
+<meta name="description" content="Abdelrahman Emad — Graphic Designer: brand identity, advertising campaigns, social media design and AI video ads.">
+<meta property="og:title" content="Abdelrahman Emad — Graphic Designer">
+<meta property="og:description" content="Brand identity, advertising campaigns, social media design and AI video ads.">
+<meta property="og:image" content="img/me.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20fill='%23FF5A1F'/%3E%3Ctext%20x='32'%20y='48'%20font-family='Arial%20Black,Arial,sans-serif'%20font-size='46'%20font-weight='900'%20text-anchor='middle'%20fill='%23000'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=DM+Mono:wght@400;500&family=Rubik:wght@400;500;700&display=swap">
+<style>
+  html,body{margin:0}
+
+  /* LOUD PRINT: a fluorescent riso zine wall. One deliberate light look. */
+  :root {
+    --orange: #FF5A1F;
+    --blue: #1F2BFF;
+    --yellow: #FFE24A;
+    --ink: #14121A;
+    --paper: #FFF7FB;
+    --display: "Climate Crisis", Impact, "Arial Black", sans-serif;
+    --body: "Rubik", system-ui, sans-serif;
+    --mono: "DM Mono", ui-monospace, Consolas, monospace;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--orange); color: var(--ink);
+    font: 400 16px/1.6 var(--body);
+    overflow-x: hidden; -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  button { font: inherit; }
+  [hidden] { display: none !important; }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wrap {
+    max-width: 1320px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  /* global riso grain */
+  .grain {
+    position: fixed; inset: 0; z-index: 90; pointer-events: none;
+    opacity: .18; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .misreg { text-shadow: 4px 3px 0 var(--blue), -3px -2px 0 var(--yellow); }
+  .display { margin: 0; font-family: var(--display); font-weight: 400; text-transform: uppercase; line-height: .85; font-size: clamp(52px, 12vw, 190px); }
+  .kicker {
+    display: inline-block; margin: 0 0 16px; padding: 8px 10px; border: 2px solid var(--ink); background: var(--yellow);
+    font: 500 13px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; transform: rotate(-1.5deg);
+  }
+
+  /* ---------- header ---------- */
+  .bar .bar-in { display: flex; align-items: center; gap: 14px 26px; flex-wrap: wrap; padding-block: 18px 8px; }
+  .mark { margin-right: auto; font: 400 clamp(22px, 2.6vw, 30px)/1 var(--display); text-transform: uppercase; text-decoration: none; }
+  .links { display: flex; gap: 6px 22px; flex-wrap: wrap; }
+  .links a { font: 500 13px/1 var(--mono); text-transform: uppercase; text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+  .links a:hover { border-bottom-color: var(--ink); }
+  .open {
+    font: 500 13px/1 var(--mono); text-transform: uppercase; text-decoration: none;
+    background: var(--yellow); border: 2px solid var(--ink); border-radius: 999px; padding: 11px 16px;
+    box-shadow: 3px 3px 0 var(--ink); transform: rotate(-2deg); transition: transform .15s;
+  }
+  .open:hover { transform: rotate(0deg) scale(1.04); }
+
+  /* ---------- hero ---------- */
+  .hero { padding-block: 34px 60px; }
+  .stage { position: relative; padding-top: 10px; }
+  h1 {
+    margin: 0; font-family: var(--display); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(56px, 13vw, 220px); line-height: .85; color: var(--ink);
+    text-shadow: 4px 3px 0 var(--blue), -3px -2px 0 var(--yellow);
+  }
+  .w { display: block; width: max-content; position: relative; }
+  .w1 { transform: rotate(-3deg); transform-origin: left center; }
+  .w2 {
+    transform: rotate(2deg); transform-origin: left center; margin-left: .12em; padding-bottom: .14em;
+    color: var(--blue); text-shadow: 4px 3px 0 var(--yellow), -3px -2px 0 var(--ink);
+  }
+  .w3 { transform: rotate(-1deg); transform-origin: left center; }
+  .blk {
+    display: inline-block; padding: .02em .16em .06em; background: var(--yellow); color: var(--ink);
+    transform: skewX(-9deg); text-shadow: none; box-shadow: 6px 6px 0 var(--blue);
+  }
+  .scribble {
+    position: absolute; left: -2%; bottom: -.3em; width: 104%; height: .42em; overflow: visible; pointer-events: none;
+  }
+  .scribble path { fill: none; stroke: var(--blue); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+
+  .pic { position: absolute; right: 0; top: 58%; width: clamp(180px, 26vw, 380px); z-index: 2; }
+  .sticker { position: relative; margin: 0; transform: rotate(6deg); }
+  .sticker img { width: 100%; height: auto; border: 10px solid #fff; background: #fff; box-shadow: 12px 12px 0 var(--ink); }
+  .sticker::before, .sticker::after {
+    content: ""; position: absolute; width: 34%; height: 11%; z-index: 3; pointer-events: none;
+    background: rgba(255, 226, 74, .78);
+  }
+  .sticker::before { top: -3%; left: -8%; transform: rotate(-38deg); }
+  .sticker::after { bottom: -2%; right: -7%; transform: rotate(-38deg); }
+
+  .badge {
+    position: absolute; z-index: 4; width: clamp(104px, 10vw, 138px); aspect-ratio: 1; border-radius: 50%;
+    border: 3px solid var(--ink); display: grid; place-content: center; text-align: center;
+    font: 700 14px/1.05 var(--body); text-transform: uppercase; color: var(--ink); background: var(--paper);
+    transform: rotate(var(--r, 0deg));
+  }
+  .badge b { display: block; margin-bottom: 4px; font: 400 clamp(24px, 2.6vw, 34px)/1 var(--display); }
+  .b1 { --r: -12deg; top: -10%; left: -14%; background: var(--yellow); }
+  .b2 { --r: 8deg; bottom: -2%; left: -16%; background: var(--blue); color: #fff; }
+  .b3 { --r: -6deg; top: 52%; right: -14%; background: var(--paper); }
+
+  .pitch { max-width: 34ch; margin: 38px 0 0; font: 500 clamp(18px, 2.2vw, 28px)/1.3 var(--body); }
+  .cta { display: flex; flex-wrap: wrap; gap: 18px 22px; margin-top: 30px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; padding: 16px 22px;
+    border: 3px solid var(--ink); background: var(--paper); color: var(--ink);
+    font: 500 14px/1 var(--mono); letter-spacing: .04em; text-transform: uppercase; text-decoration: none;
+    box-shadow: 6px 6px 0 var(--blue); cursor: pointer; transition: transform .15s, box-shadow .15s;
+  }
+  .btn:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--blue); }
+  .btn.ink { background: var(--ink); color: var(--yellow); }
+
+  /* ---------- marquee ---------- */
+  .band-wrap { overflow: hidden; padding-block: 60px; }
+  .band {
+    width: 112%; margin-left: -6%; padding: 14px 0 16px; background: var(--blue);
+    border-block: 3px solid var(--ink); transform: rotate(-2deg);
+  }
+  .track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+  .track span {
+    padding-right: .5em; font: 400 clamp(28px, 3vw, 40px)/1 var(--display); text-transform: uppercase;
+    color: var(--yellow); white-space: nowrap;
+  }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  .cap { margin: 0 auto; font: 400 13px/1.5 var(--mono); text-transform: uppercase; }
+
+  /* ---------- the wall (work) ---------- */
+  .work { margin-top: 24px; padding-block: 84px 96px; background: var(--ink); color: var(--paper); border-block: 3px solid var(--ink); overflow-x: clip; }
+  .wall-h { color: var(--yellow); text-shadow: 4px 3px 0 var(--blue), -3px -2px 0 var(--orange); }
+  .wall-sub { margin: 22px 0 0; font: 500 14px/1.4 var(--mono); text-transform: uppercase; color: var(--paper); }
+  .pills { display: flex; flex-wrap: wrap; gap: 12px 14px; margin-top: 30px; }
+  .pill {
+    padding: 12px 16px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink);
+    font: 500 13px/1 var(--mono); text-transform: uppercase; cursor: pointer;
+    transform: rotate(var(--r, 0deg)); transition: transform .15s, background .15s;
+  }
+  .pill:hover { transform: rotate(0deg) scale(1.05); }
+  .pill[aria-pressed="true"] { background: var(--orange); }
+
+  .wall { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 28px 22px; padding-block: 40px; }
+  .wall-empty { margin: 30px 0 0; font: 500 14px/1.4 var(--mono); text-transform: uppercase; color: var(--paper); }
+  .poster {
+    position: relative; display: block; flex: none; margin: var(--mt, 0px) 0 18px; padding: 0; border: 0;
+    background: none; color: inherit; cursor: pointer; text-align: left;
+    transform: rotate(var(--rot, 0deg));
+    transition: transform .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .poster.l { width: clamp(260px, 40vw, 560px); }
+  .poster.m { width: clamp(220px, 28vw, 400px); }
+  .poster.s { width: clamp(180px, 21vw, 300px); }
+  .poster img {
+    width: 100%; height: auto; border: 8px solid var(--paper); background: #fff;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, .55); transition: box-shadow .35s cubic-bezier(.2,.8,.2,1);
+  }
+  /* tape strips on the top edge */
+  .poster::before, .poster::after {
+    content: ""; position: absolute; top: -12px; width: 90px; height: 26px; z-index: 3; pointer-events: none;
+    background: rgba(255, 226, 74, .75);
+  }
+  .poster::before { left: 10%; transform: rotate(-8deg); }
+  .poster::after { left: 56%; transform: rotate(7deg); }
+  .poster:focus-visible { transform: rotate(0deg) scale(1.04); z-index: 5; }
+  .poster:focus-visible img { box-shadow: 16px 16px 0 rgba(0, 0, 0, .55); }
+  @media (hover: hover) and (min-width: 761px) {
+    .poster:hover { transform: rotate(0deg) scale(1.04); z-index: 5; }
+    .poster:hover img { box-shadow: 16px 16px 0 rgba(0, 0, 0, .55); }
+  }
+  @media (min-width: 761px) {
+    .poster.ov { margin-left: -40px; }
+  }
+
+  /* sticker label: number + title, rotated against the poster */
+  .plabel {
+    position: absolute; left: -14px; bottom: -16px; z-index: 2; display: flex; align-items: baseline; gap: 8px;
+    max-width: 86%; padding: 6px 10px 6px 8px; border: 2px solid var(--ink); background: var(--yellow); color: var(--ink);
+    box-shadow: 3px 3px 0 var(--ink); transform: rotate(calc(var(--rot, 0deg) * -.5));
+  }
+  .plabel.o { background: var(--orange); }
+  .plabel.b { background: var(--blue); color: var(--paper); }
+  .pno { flex: none; font: 500 13px/1 var(--mono); }
+  .ptitle { font: 700 clamp(16px, 1.4vw, 20px)/1.1 var(--body); overflow-wrap: anywhere; }
+  .top-pick {
+    position: absolute; top: -20px; right: -18px; z-index: 4; width: 84px; height: 84px; border-radius: 50%;
+    border: 3px solid var(--ink); background: var(--orange); color: var(--ink); display: grid; place-content: center;
+    text-align: center; font: 700 11px/1.1 var(--body); text-transform: uppercase; transform: rotate(10deg);
+    pointer-events: none;
+  }
+
+  /* ---------- experience ---------- */
+  .exp { padding-block: 90px 96px; background: var(--blue); color: var(--paper); border-bottom: 3px solid var(--ink); }
+  .exp .kicker { background: var(--orange); }
+  .exp .display { color: var(--paper); text-shadow: 4px 3px 0 var(--yellow), -3px -2px 0 var(--orange); }
+  .tickets { display: grid; gap: 26px; margin-top: 52px; max-width: 880px; }
+  .ticket {
+    position: relative; padding: 26px 30px 28px; background: var(--paper); color: var(--ink);
+    border: 3px dashed var(--ink); box-shadow: 8px 8px 0 var(--orange);
+    transform: rotate(var(--r, 0deg));
+  }
+  .ticket:nth-child(1) { --r: -1.5deg; }
+  .ticket:nth-child(2) { --r: 1deg; margin-left: 8%; }
+  .ticket:nth-child(3) { --r: -.5deg; margin-left: 3%; }
+  .tk-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 18px; }
+  .ticket h3 { margin: 0; font: 400 clamp(30px, 3.8vw, 48px)/1 var(--display); text-transform: uppercase; }
+  .tk-date {
+    padding: 7px 9px; border: 2px solid var(--ink); background: var(--yellow);
+    font: 500 13px/1 var(--mono); text-transform: uppercase;
+  }
+  .tk-role { margin: 12px 0 14px; font: 500 16px/1.4 var(--body); }
+  .ticket ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .ticket li { position: relative; padding-left: 26px; line-height: 1.5; }
+  .ticket li::before { content: "✶"; position: absolute; left: 0; top: 0; color: var(--blue); }
+  .toolbox { margin-top: 60px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px 14px; margin-top: 16px; }
+  .chip {
+    display: inline-block; padding: 10px 15px; border: 2px solid var(--ink); border-radius: 999px;
+    background: var(--yellow); color: var(--ink); font: 500 15px/1 var(--body);
+    box-shadow: 3px 3px 0 var(--ink); transform: rotate(var(--r, 0deg));
+  }
+  .chip:nth-child(3n+1) { --r: -3deg; background: var(--yellow); }
+  .chip:nth-child(3n+2) { --r: 2deg; background: var(--orange); }
+  .chip:nth-child(3n) { --r: -1deg; background: var(--paper); }
+
+  /* ---------- contact ---------- */
+  /* ---------- AI video reels (click-to-load) ---------- */
+  .reels { padding-block: 84px 96px; background: var(--ink); color: var(--paper); border-block: 3px solid var(--ink); overflow-x: clip; }
+  .reels .kicker { background: var(--yellow); }
+  .reels-h { color: var(--yellow); text-shadow: 4px 3px 0 var(--blue), -3px -2px 0 var(--orange); }
+  .reels-intro { margin: 22px 0 0; max-width: 58ch; font: 400 17px/1.5 var(--body); color: var(--paper); }
+  .reels-grid { margin-top: 52px; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; align-items: start; }
+  .reel { position: relative; min-width: 0; transform: rotate(var(--r, 0deg)); transition: transform .2s; }
+  .reel:nth-child(odd) { --r: -1.5deg; }
+  .reel:nth-child(even) { --r: 1.5deg; }
+  .reel.is-playing { transform: none; z-index: 2; }
+  .reel-frame {
+    position: relative; display: block; width: 100%; margin: 0; padding: 0; aspect-ratio: var(--ar, 9 / 16);
+    border: 6px solid var(--paper); background: #000; box-shadow: 10px 10px 0 var(--orange);
+    overflow: hidden; border-radius: 0; text-align: left; color: var(--paper);
+  }
+  button.reel-frame { cursor: pointer; }
+  button.reel-frame:focus-visible { outline: 3px solid var(--yellow); outline-offset: 6px; }
+  .reel-frame img, .reel-live video { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+  .reel-live video { object-fit: contain; background: #000; }
+  .reel-play {
+    position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; transform: translate(-50%, -50%);
+    display: grid; place-items: center; padding-left: 6px; border-radius: 50%; pointer-events: none;
+    background: var(--yellow); color: var(--ink); border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--ink);
+    transition: transform .15s;
+  }
+  .reel-play svg { width: 30px; height: 30px; }
+  .reel-live { cursor: auto; }
+  .reel-spin {
+    position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; pointer-events: none;
+    border: 5px solid rgba(255, 247, 251, .3); border-top-color: var(--yellow); border-radius: 50%;
+    animation: reel-spin .8s linear infinite;
+  }
+  .reel-live:not(.is-loading) .reel-spin { display: none; }
+  .reel-live.is-error::after {
+    content: "COULD NOT LOAD VIDEO"; position: absolute; inset: 0; display: grid; place-items: center; padding: 16px;
+    font: 500 13px/1.3 var(--mono); text-align: center; color: var(--paper); background: #000;
+  }
+  @keyframes reel-spin { to { transform: rotate(360deg); } }
+  .reel-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 22px; }
+  .reel-title { font: 700 17px/1.25 var(--body); color: var(--paper); }
+  .reel-dur { font: 500 13px/1 var(--mono); color: var(--yellow); white-space: nowrap; }
+  @media (prefers-reduced-motion: no-preference) {
+    .reel-frame:hover .reel-play { transform: translate(-50%, -50%) scale(1.08); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reel, .reel-play { transition: none; }
+    .reel-spin { animation: none; }
+  }
+  @media (max-width: 760px) { .reel { transform: none; } }
+
+  .contact { padding-block: 92px 80px; background: var(--yellow); }
+  .contact .display { font-size: clamp(50px, 11.5vw, 190px); text-shadow: 4px 3px 0 var(--blue), -3px -2px 0 var(--orange); }
+  .rows { margin-top: 48px; border-top: 3px solid var(--ink); }
+  .crow {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 14px 22px;
+    padding: 22px 0; border-bottom: 3px solid var(--ink);
+  }
+  .lbl { margin: 0 0 8px; font: 500 13px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+  .val {
+    display: inline-block; font: 700 clamp(20px, 3vw, 40px)/1.15 var(--body);
+    overflow-wrap: anywhere; color: var(--ink); text-decoration: none;
+  }
+  a.val { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  a.val:hover { background: var(--ink); color: var(--yellow); text-decoration: none; }
+  .copy {
+    padding: 14px 18px; border: 3px solid var(--ink); background: var(--paper); color: var(--ink);
+    font: 500 14px/1 var(--mono); text-transform: uppercase; cursor: pointer;
+    box-shadow: 5px 5px 0 var(--ink); transition: transform .15s, box-shadow .15s;
+  }
+  .copy:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
+
+  footer { padding-block: 26px 40px; background: var(--orange); }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; font: 400 13px/1.5 var(--mono); text-transform: uppercase; }
+
+  /* ---------- project viewer ---------- */
+  .viewer {
+    --p-dom: #FF5A1F; --p-accent: #FFE24A; --p-dark: #14121A; --p-light: #FFF7FB;
+    --p-on-dom: #14121A; --p-on-accent: #14121A;
+    position: fixed; inset: 0; z-index: 80; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;
+    background: var(--paper); color: var(--ink);
+  }
+  .viewer :focus-visible { outline: 3px solid var(--focus, var(--blue)); outline-offset: 4px; }
+  .vtop {
+    position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 3px solid var(--ink);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .vtop-in { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 18px; padding-block: 14px; }
+  .vmeta { flex: 0 1 auto; font: 500 12px/1.3 var(--mono); text-transform: uppercase; }
+  .vtitle { flex: 1 1 220px; min-width: 0; margin: 0; font: 700 clamp(20px, 2.6vw, 32px)/1.1 var(--body); overflow-wrap: anywhere; }
+  .vnav { display: flex; flex-wrap: wrap; gap: 10px; }
+  .vnav .btn { padding: 12px 14px; font-size: 13px; box-shadow: 4px 4px 0 var(--blue); }
+  .vnav .btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--blue); }
+
+  /* shared body pieces */
+  .vbody { max-width: 1100px; padding-block: 28px 90px; overflow-x: clip; }
+  .vhero { position: relative; display: grid; gap: 24px; margin: 0 0 56px; }
+  .vhero-cover { position: relative; order: -1; margin: 0; }
+  .vhero-cover img { width: 100%; height: auto; background: #fff; border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+  .vhero-txt { min-width: 0; }
+  .vkick { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px; font: 500 13px/1 var(--mono); text-transform: uppercase; }
+  .vnum { padding: 6px 8px; border: 2px solid currentColor; }
+  .vhero-title { margin: 0; font: 400 clamp(36px, 7vw, 110px)/.88 var(--display); text-transform: uppercase; overflow-wrap: normal; word-break: normal; hyphens: none; }
+  .vhero-sub { margin: 16px 0 0; font: 700 clamp(18px, 2vw, 28px)/1.25 var(--body); overflow-wrap: normal; word-break: normal; }
+  .vsub { margin: 0 0 22px; font: 500 13px/1.4 var(--mono); text-transform: uppercase; }
+  .vsheet-wrap { display: block; }
+  .vsheet { display: block; }
+  .vmods { display: block; }
+  .vtext {
+    width: 100%; max-width: 760px; margin: 0 auto; padding: 26px 0;
+    white-space: pre-line; font-size: 18px; line-height: 1.7; overflow-wrap: anywhere;
+  }
+  .vtext[data-align="center"] { text-align: center; }
+  .vtext[data-align="right"] { text-align: right; }
+  .vmod { margin: 0 0 28px; }
+  .vitems { display: grid; gap: 16px; }
+  .vitems.multi { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .vitem { margin: 0; min-width: 0; }
+  .vitem img { width: 100%; height: auto; background: #fff; }
+  .vfcap { display: none; }
+  .voutro { display: grid; gap: 22px; margin-top: 64px; }
+  .vend { margin: 0; font: 400 clamp(64px, 16vw, 220px)/.9 var(--display); text-align: center; text-transform: uppercase; }
+  .vnext {
+    display: grid; grid-template-columns: minmax(96px, 200px) minmax(0, 1fr); gap: 18px; align-items: center;
+    width: 100%; padding: 18px; text-align: left; cursor: pointer; font: inherit; color: inherit;
+    border: 3px solid var(--ink); background: var(--paper);
+  }
+  .vnext:hover { transform: translate(-3px, -3px); }
+  .vnext img { width: 100%; height: auto; border: 2px solid currentColor; background: #fff; }
+  .vnext-x { display: grid; gap: 12px; min-width: 0; }
+  .vnext-l { font: 500 clamp(14px, 2vw, 18px)/1 var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+  .vnext-t { font: 400 clamp(36px, 6vw, 84px)/.9 var(--display); text-transform: uppercase; overflow-wrap: anywhere; }
+  .vback { justify-self: start; padding: 18px 24px; font-size: 15px; }
+
+  /* ===== cinema: title card, film grain, sprockets, subtitles ===== */
+  .viewer[data-layout="cinema"] { --focus: var(--p-accent); background: #0B0B0C; color: #F2EFE8; }
+  .viewer[data-layout="cinema"]::after {
+    content: ""; position: fixed; inset: 0; z-index: 70; pointer-events: none; opacity: .3; mix-blend-mode: screen;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .viewer[data-layout="cinema"] .vtop { background: #0B0B0C; color: #F2EFE8; border-color: #F2EFE8; }
+  .viewer[data-layout="cinema"] .vmeta { color: var(--p-accent); }
+  .viewer[data-layout="cinema"] .vnav .btn { background: #0B0B0C; color: #F2EFE8; border-color: #F2EFE8; box-shadow: 4px 4px 0 var(--p-accent); }
+  .viewer[data-layout="cinema"] .vnav .btn.ink { background: var(--p-accent); color: var(--p-on-accent); }
+  .viewer[data-layout="cinema"] .vbody { max-width: none; padding: 0 0 90px; }
+  .viewer[data-layout="cinema"] .vhero { display: block; margin: 0 0 48px; padding-block: 6vw; background: #000; }
+  .viewer[data-layout="cinema"] .vhero-cover img { border: 0; box-shadow: none; }
+  .viewer[data-layout="cinema"] .vhero-txt {
+    position: absolute; z-index: 1; left: 0; right: 0; bottom: 12%; padding: 60px 5vw 24px; text-align: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.72) 45%);
+  }
+  .viewer[data-layout="cinema"] .vcredit { margin: 0 0 14px; font: 500 13px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--p-accent); }
+  .viewer[data-layout="cinema"] .vkick { justify-content: center; color: #F2EFE8; }
+  .viewer[data-layout="cinema"] .vnum { border-color: var(--p-accent); color: var(--p-accent); }
+  .viewer[data-layout="cinema"] .vhero-title { font-size: clamp(36px, 7vw, 110px); letter-spacing: .06em; color: #F2EFE8; text-shadow: 0 4px 28px rgba(0,0,0,.85); }
+  .viewer[data-layout="cinema"] .vmod { margin: 56px 0; }
+  .viewer[data-layout="cinema"] .vlabel { display: block; margin: 0 0 14px; padding: 0 5vw; font: 500 13px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--p-accent); }
+  .viewer[data-layout="cinema"] .vitems { display: block; background: #000; }
+  .viewer[data-layout="cinema"] .vitems::before,
+  .viewer[data-layout="cinema"] .vitems::after {
+    content: ""; display: block; height: 14px; border-radius: 3px; opacity: .6;
+    background: repeating-linear-gradient(90deg, #F2EFE8 0 12px, transparent 12px 26px);
+  }
+  .viewer[data-layout="cinema"] .vitems::before { margin-bottom: 14px; }
+  .viewer[data-layout="cinema"] .vitems::after { margin-top: 14px; }
+  .viewer[data-layout="cinema"] .vitem + .vitem { margin-top: 14px; }
+  .viewer[data-layout="cinema"] .vitem img { max-width: none; }
+  .viewer[data-layout="cinema"] .vtext {
+    max-width: 760px; padding: 28px 5vw; color: #FFE9A8; font: 500 20px/1.5 var(--body); text-align: center;
+  }
+  .viewer[data-layout="cinema"] .vtext::before { content: "— "; }
+  .viewer[data-layout="cinema"] .voutro { padding: 0 5vw; }
+  .viewer[data-layout="cinema"] .vend { color: #F2EFE8; }
+  .viewer[data-layout="cinema"] .vnext { background: #0B0B0C; color: #F2EFE8; border-color: #F2EFE8; box-shadow: 10px 10px 0 var(--p-accent); }
+  .viewer[data-layout="cinema"] .vnext img { border-color: #F2EFE8; }
+  .viewer[data-layout="cinema"] .vback { background: var(--p-accent); color: var(--p-on-accent); border-color: #F2EFE8; box-shadow: 6px 6px 0 #F2EFE8; }
+
+  /* ===== cinema, gallery variant (opt-in per project via PROJECT_OVERRIDES.cinemaVariant):
+     no overlay or grain over artwork, each image shown whole, scenes as framed "screens" ===== */
+  body:has(.viewer[data-variant="gallery"]:not([hidden])) .grain { display: none; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] { background: #111; }
+  .viewer[data-layout="cinema"][data-variant="gallery"]::after { display: none; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vtop { background: #111; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vbody { padding: 0 16px 90px; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vhero {
+    display: flex; flex-direction: column; align-items: center; gap: 36px;
+    margin: 0 0 56px; padding: 28px 0 0; background: none;
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-cover {
+    order: -1; width: fit-content; max-width: 100%; margin: 0 auto;
+    border: 10px solid #000; background: #000; box-shadow: 0 30px 60px rgba(0,0,0,.5);
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-cover img {
+    display: block; width: auto; height: auto; max-width: min(100%, 1200px); max-height: calc(100vh - 170px);
+    object-fit: contain; margin-inline: auto; border: 0; box-shadow: none; background: none;
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-txt {
+    position: relative; left: auto; right: auto; bottom: auto; z-index: auto; width: 100%;
+    padding: 0 5vw; background: none; text-align: center;
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-title { text-shadow: none; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vmod { margin: 56px auto; width: fit-content; max-width: 100%; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vlabel { padding: 0; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; width: fit-content; max-width: 100%;
+    margin: 0 auto; border: 10px solid #000; background: #000; box-shadow: 0 30px 60px rgba(0,0,0,.5);
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems::before,
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems::after { flex: 0 0 100%; margin: 0; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems::after { order: 99; }
+  /* figure width = the width the image gets at the height cap (aspect ratio from --ar, set in JS), so the card
+     shrink-wraps the picture and portrait images are never clipped or left as blank boxes */
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitem { margin: 0; max-width: 100%; width: min(100%, 1200px, calc((100vh - 170px) * var(--ar, 1.5))); }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems.multi .vitem { width: min(100%, 1200px, calc((100vh - 200px) * var(--ar, 1.5))); }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitem + .vitem { margin-top: 0; }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitem img {
+    display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 170px);
+    object-fit: contain; margin-inline: auto; border: 0; box-shadow: none; background: none;
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vitems.multi .vitem img { max-height: calc(100vh - 200px); }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vscene-foot {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    margin: 14px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--p-accent);
+    font: 500 12px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--p-accent);
+  }
+  .viewer[data-layout="cinema"][data-variant="gallery"] .vscene-foot span:last-child { text-align: right; min-width: 0; overflow-wrap: anywhere; }
+  @media (max-width: 760px) {
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vbody { padding: 0 16px 64px; }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vhero { gap: 24px; padding-top: 20px; margin-bottom: 36px; }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-cover img,
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vitem img,
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vitems.multi .vitem img { max-height: calc(100vh - 130px); }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vitem,
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vitems.multi .vitem { width: min(100%, calc((100vh - 130px) * var(--ar, 1.5))); }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vmod { margin: 36px auto; }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vitems { width: 100%; gap: 12px; border-width: 6px; }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vhero-cover { border-width: 6px; }
+    .viewer[data-layout="cinema"][data-variant="gallery"] .vscene-foot { font-size: 11px; }
+  }
+
+  /* ===== brandbook: editorial guidelines, colour system, figures ===== */
+  .viewer[data-layout="brandbook"] { --focus: var(--ink); background: var(--p-light); color: var(--ink); }
+  .viewer[data-layout="brandbook"] .vtop { background: var(--p-light); border-color: var(--ink); }
+  .viewer[data-layout="brandbook"] .vnav .btn { background: #fff; color: var(--ink); border-color: var(--ink); box-shadow: 4px 4px 0 var(--p-dom); }
+  .viewer[data-layout="brandbook"] .vnav .btn.ink { background: var(--ink); color: var(--p-light); }
+  .viewer[data-layout="brandbook"] .vbody { padding-block: 8vw 90px; }
+  .viewer[data-layout="brandbook"] .vhero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 5vw; padding-bottom: 8vw; margin-bottom: 8vw; border-bottom: 1px solid var(--ink); }
+  .viewer[data-layout="brandbook"] .vhero-txt { order: -1; min-width: 0; }
+  .viewer[data-layout="brandbook"] .vhero-cover { padding: 14px; border: 1px solid var(--ink); background: #fff; }
+  .viewer[data-layout="brandbook"] .vhero-cover img { border: 0; box-shadow: none; }
+  .viewer[data-layout="brandbook"] .vsub { color: var(--ink); }
+  .viewer[data-layout="brandbook"] .vhero-title { font-size: clamp(34px, 4.2vw, 72px); }
+  .viewer[data-layout="brandbook"] .vsys { margin-top: 40px; }
+  .viewer[data-layout="brandbook"] .vsys-l { margin: 0 0 14px; font: 500 13px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; border-top: 3px solid var(--p-dom); padding-top: 12px; }
+  .viewer[data-layout="brandbook"] .vsws { display: flex; flex-wrap: wrap; gap: 14px; }
+  .viewer[data-layout="brandbook"] .vsw { margin: 0; flex: 1 1 90px; min-width: 90px; }
+  .viewer[data-layout="brandbook"] .vchip { display: block; min-width: 90px; height: 140px; border: 1px solid var(--ink); }
+  .viewer[data-layout="brandbook"] .vsw figcaption { margin-top: 8px; font: 500 12px/1 var(--mono); text-transform: uppercase; }
+  .viewer[data-layout="brandbook"] .vmod { margin: 0 0 8vw; }
+  .viewer[data-layout="brandbook"] .vmod.w-l { width: 80%; margin-right: auto; }
+  .viewer[data-layout="brandbook"] .vmod.w-r { width: 80%; margin-left: auto; }
+  .viewer[data-layout="brandbook"] .vitems { gap: 22px; }
+  .viewer[data-layout="brandbook"] .vitems.multi { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .viewer[data-layout="brandbook"] .vitem { background: #fff; border: 1px solid var(--ink); padding: 14px; }
+  .viewer[data-layout="brandbook"] .vfcap { display: block; margin-top: 12px; padding-top: 10px; border-top: 3px solid var(--p-dom); font: 400 12px/1.2 var(--mono); text-transform: uppercase; }
+  .viewer[data-layout="brandbook"] .vtext {
+    max-width: 820px; margin: 8vw auto; padding: 4px 0 4px 24px; border-left: 8px solid var(--p-dom);
+    font: 500 clamp(22px, 2.6vw, 34px)/1.35 var(--body);
+  }
+  .viewer[data-layout="brandbook"] .vnext { background: #fff; border: 1px solid var(--ink); box-shadow: 8px 8px 0 var(--p-dom); }
+  .viewer[data-layout="brandbook"] .vnext img { border-color: var(--ink); }
+  .viewer[data-layout="brandbook"] .vback { background: var(--ink); color: var(--p-light); box-shadow: 4px 4px 0 var(--p-dom); }
+
+  /* ===== brief card: text modules of projects with PROJECT_OVERRIDES textStyle "brief" (black fabric, beige thread) ===== */
+  .viewer .vbrief {
+    position: relative; box-sizing: border-box; max-width: 760px; margin: 48px auto; padding: clamp(22px, 3vw, 40px);
+    background: #121212; color: #E9E2D6; border: 1px solid rgba(201,187,164,.25); border-radius: 4px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.18); text-align: left;
+  }
+  .viewer .vbrief[dir="rtl"] { text-align: right; }
+  .viewer .vbrief::before {
+    content: ""; position: absolute; inset: 8px; border: 1.5px dashed rgba(201,187,164,.45); border-radius: 2px; pointer-events: none;
+  }
+  .viewer .vbrief .vb-kick { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: #C9BBA4; }
+  .viewer .vbrief .vb-rule { display: block; flex: none; width: 32px; height: 1px; background: #C9BBA4; }
+  .viewer .vbrief .vb-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 22px; align-items: baseline; padding-block: 12px; border-top: 1px solid rgba(201,187,164,.18); }
+  .viewer .vbrief .vb-lbl { margin: 0; font: 500 13px/1.5 var(--body); color: #C9BBA4; }
+  .viewer .vbrief .vb-val { margin: 0; font: 600 17px/1.5 var(--body); color: #E9E2D6; overflow-wrap: anywhere; }
+  .viewer .vbrief .vb-block { padding-block: 12px; border-top: 1px solid rgba(201,187,164,.18); }
+  .viewer .vbrief .vb-block .vb-lbl { margin-bottom: 6px; }
+  .viewer .vbrief .vb-p { margin: 0; max-width: 62ch; font: 400 15.5px/1.85 var(--body); color: #E9E2D6; }
+  .viewer .vbrief .vb-p + .vb-p { margin-top: 10px; }
+
+  /* ===== skate deck stickers: text modules of projects with PROJECT_OVERRIDES textStyle "skate" ===== */
+  .viewer .vskate {
+    position: relative; box-sizing: border-box; max-width: 980px; margin: 56px auto; text-align: center;
+    padding: clamp(26px, 4vw, 56px) clamp(28px, 6vw, 90px); border-radius: 999px;
+    background-color: #000; background-image: radial-gradient(#1a1a1a 1px, transparent 1.2px); background-size: 4px 4px;
+    color: #F4F4F4; box-shadow: 0 18px 40px rgba(0,0,0,.22); transform: rotate(-1.5deg);
+  }
+  .viewer .vskate.tilt-b { transform: rotate(1.5deg); }
+  .viewer .vsk-bolt { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #8FB4BB; pointer-events: none; }
+  .viewer .vsk-bolt.l1 { left: 9%; top: 34%; }
+  .viewer .vsk-bolt.l2 { left: 9%; top: 62%; }
+  .viewer .vsk-bolt.r1 { right: 9%; top: 34%; }
+  .viewer .vsk-bolt.r2 { right: 9%; top: 62%; }
+  .viewer .vsk-h { margin: 0 0 18px; font: 400 clamp(26px, 4.4vw, 58px)/.95 var(--display); text-transform: uppercase; color: #EE692B; }
+  .viewer .vsk-p { margin: 0 auto 14px; max-width: 46ch; font: 600 clamp(16px, 1.6vw, 20px)/1.5 var(--body); color: #F4F4F4; }
+  .viewer .vsk-amp { margin: 4px 0 12px; font: 400 48px/1 var(--display); color: #EE692B; }
+  .viewer .vsk-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 14px 0 16px; }
+  .viewer .vsk-chip { display: inline-block; padding: 6px 14px; border-radius: 999px; font: 700 clamp(14px, 1.4vw, 16px)/1.2 var(--body); color: #000; transform: var(--rot, none); }
+  @media (max-width: 760px) {
+    .viewer .vskate, .viewer .vskate.tilt-b { transform: none; border-radius: 28px; padding: 22px; }
+    .viewer .vsk-chip { transform: none; }
+  }
+
+  /* ===== feed: pinned post, social cards, chat bubbles ===== */
+  .viewer[data-layout="feed"] {
+    --focus: var(--yellow); color: var(--p-on-dom); background-color: var(--p-dom);
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 14px, transparent 14px 28px);
+  }
+  .viewer[data-layout="feed"] .vtop { background: var(--p-dom); color: var(--p-on-dom); border-color: var(--ink); }
+  .viewer[data-layout="feed"] .vnav .btn { background: #fff; color: var(--ink); border-color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+  .viewer[data-layout="feed"] .vnav .btn.ink { background: var(--ink); color: #fff; }
+  .viewer[data-layout="feed"] .vhero { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .viewer[data-layout="feed"] .vhero-cover {
+    width: 100%; max-width: 920px; margin: 18px auto 0; padding: 12px 12px 14px; border-radius: 18px; background: #fff;
+    box-shadow: 12px 12px 0 rgba(0,0,0,.35); transform: rotate(-1.2deg);
+  }
+  .viewer[data-layout="feed"] .vhero-cover img { border: 0; box-shadow: none; border-radius: 10px; }
+  .viewer[data-layout="feed"] .vhero-cover::before {
+    content: "PINNED POST"; position: absolute; top: -14px; left: 20px; z-index: 1; padding: 6px 10px;
+    background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font: 500 12px/1 var(--mono); transform: rotate(-3deg);
+  }
+  .viewer[data-layout="feed"] .vhero-title { color: var(--p-on-dom); }
+  .viewer[data-layout="feed"] .vmods { columns: 2; column-gap: 28px; }
+  .viewer[data-layout="feed"] .vmod.vpost {
+    break-inside: avoid; margin: 0 0 28px; padding: 12px; border-radius: 18px; background: #fff; color: var(--ink);
+    box-shadow: 10px 10px 0 rgba(0,0,0,.35);
+  }
+  .viewer[data-layout="feed"] .vpost.tilt-a { transform: rotate(-1.5deg); }
+  .viewer[data-layout="feed"] .vpost.tilt-b { transform: rotate(1.5deg); }
+  .viewer[data-layout="feed"] .vpost-h { display: flex; align-items: center; gap: 10px; padding: 2px 2px 12px; }
+  .viewer[data-layout="feed"] .vav { flex: none; width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+  .viewer[data-layout="feed"] .vhandle { font: 700 14px/1.2 var(--body); overflow-wrap: anywhere; }
+  .viewer[data-layout="feed"] .vspon { margin-left: auto; font: 500 11px/1 var(--mono); letter-spacing: .06em; color: #5b5560; }
+  .viewer[data-layout="feed"] .vpost .vitems { gap: 10px; }
+  .viewer[data-layout="feed"] .vpost .vitem img { border-radius: 10px; }
+  .viewer[data-layout="feed"] .vpost-a { display: flex; align-items: center; gap: 14px; padding: 12px 2px 4px; }
+  .viewer[data-layout="feed"] .vpost-a svg:last-child { margin-left: auto; }
+  .viewer[data-layout="feed"] .vlike { margin: 6px 2px 0; font: 500 12px/1.3 var(--mono); text-transform: uppercase; color: var(--ink); }
+  .viewer[data-layout="feed"] .vtext {
+    break-inside: avoid; max-width: 470px; margin: 0 0 28px; padding: 16px 20px; transform: rotate(1deg);
+    background: var(--p-accent); color: var(--p-on-accent); border-radius: 22px 22px 22px 4px;
+    font: 500 18px/1.5 var(--body);
+  }
+  .viewer[data-layout="feed"] .vnext { background: #fff; color: var(--ink); border: 0; border-radius: 18px; box-shadow: 10px 10px 0 rgba(0,0,0,.35); }
+  .viewer[data-layout="feed"] .vnext img { border: 0; border-radius: 10px; }
+  .viewer[data-layout="feed"] .vback { background: var(--yellow); color: var(--ink); }
+
+  /* feed sections: full-width blocks that span both post columns */
+  .viewer[data-layout="feed"] .vsec { column-span: all; break-inside: avoid; margin: 56px 0 28px; color: var(--p-on-dom); }
+  .viewer[data-layout="feed"] .vsec-head { margin: 0 0 22px; padding-top: 16px; border-top: 4px solid var(--p-on-dom); }
+  .viewer[data-layout="feed"] .vsec-kick { margin: 0 0 10px; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+  .viewer[data-layout="feed"] .vsec-h { margin: 0; font: 400 clamp(30px, 5vw, 56px)/1 var(--display); text-transform: uppercase; color: var(--p-on-dom); }
+  .viewer[data-layout="feed"] .vsec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+  .viewer[data-layout="feed"] .vsec-panel { position: relative; margin: 0; border: 6px solid #fff; box-shadow: 10px 10px 0 rgba(0,0,0,.35); background: #fff; }
+  .viewer[data-layout="feed"] .vsec-panel img { display: block; width: 100%; height: auto; }
+  .viewer[data-layout="feed"] .vsec-chip { position: absolute; top: 12px; left: 12px; padding: 6px 10px; background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font: 500 12px/1 var(--mono); letter-spacing: .04em; }
+
+  /* story section (section kind "story"): full-width presentation boards, one per file, no post chrome */
+  .viewer[data-layout="feed"] .vboards { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+  .viewer[data-layout="feed"] .vboard { width: fit-content; max-width: 100%; margin: 0; }
+  .viewer[data-layout="feed"] .vboard-frame { width: fit-content; max-width: 100%; margin: 0; border: 6px solid #fff; background: #fff; box-shadow: 12px 12px 0 rgba(0,0,0,.35); }
+  .viewer[data-layout="feed"] .vboard-frame img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 170px); margin: 0 auto; }
+  .viewer[data-layout="feed"] .vboard-cap { margin: 12px 0 0; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--p-on-dom); }
+  @media (max-width: 760px) { .viewer[data-layout="feed"] .vboard-frame img { max-height: calc(100vh - 130px); } }
+
+  /* compare: BEFORE/AFTER frame that auto-switches (section kind "compare") */
+  .vcmp { max-width: 1000px; margin: 0 auto; }
+  .vcmp-frame {
+    position: relative; width: 100%; overflow: hidden; border: 6px solid #fff; background: #0B0B0C;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, .35); cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent;
+  }
+  .vcmp-img {
+    position: absolute; inset: 0; width: 100%; height: 100%; max-width: none;
+    object-fit: contain; background: #0B0B0C;
+  }
+  .vcmp-after { opacity: 0; transition: opacity .7s ease; }
+  .vcmp-frame[data-state="after"] .vcmp-after { opacity: 1; }
+  .vcmp-state {
+    position: absolute; top: 14px; left: 14px; z-index: 2; padding: 9px 12px; pointer-events: none;
+    border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); background: var(--yellow); color: var(--ink);
+    font: 500 clamp(16px, 2.2vw, 22px)/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  }
+  .vcmp-state[data-s="after"] { background: var(--orange); }
+  .vcmp-ctrl { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 26px; }
+  .vcmp-btn[aria-pressed="true"] { background: var(--ink); color: var(--yellow); }
+  @media (prefers-reduced-motion: reduce) { .vcmp-after { transition: none; } }
+
+  /* ===== press: print proof, colour bar, crop marks, OK stamps ===== */
+  .viewer[data-layout="press"] { --focus: var(--ink); background: #EDEAE4; color: var(--ink); }
+  .viewer[data-layout="press"] .vtop { background: #EDEAE4; border-color: var(--ink); }
+  .viewer[data-layout="press"] .vnav .btn { background: #fff; color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+  .viewer[data-layout="press"] .vnav .btn.ink { background: var(--ink); color: #EDEAE4; }
+  .viewer[data-layout="press"] .vbody { padding-top: 22px; }
+  .viewer[data-layout="press"] .vbar {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 6vw; padding-bottom: 18px; border-bottom: 3px solid var(--ink);
+  }
+  .viewer[data-layout="press"] .vsq { flex: none; width: 28px; height: 28px; border: 1px solid var(--ink); }
+  .viewer[data-layout="press"] .vreg { flex: none; width: 36px; height: 36px; margin-left: auto; }
+  .viewer[data-layout="press"] .vhero-cover { padding: 0; }
+  .viewer[data-layout="press"] .vhero-cover img { border: 0; box-shadow: none; }
+  .viewer[data-layout="press"] .vsheet-wrap { position: relative; padding: 24px; }
+  .viewer[data-layout="press"] .vsheet-wrap::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image:
+      linear-gradient(#14121A, #14121A), linear-gradient(#14121A, #14121A),
+      linear-gradient(#14121A, #14121A), linear-gradient(#14121A, #14121A),
+      linear-gradient(#14121A, #14121A), linear-gradient(#14121A, #14121A),
+      linear-gradient(#14121A, #14121A), linear-gradient(#14121A, #14121A);
+    background-size: 16px 2px, 2px 16px, 16px 2px, 2px 16px, 16px 2px, 2px 16px, 16px 2px, 2px 16px;
+    background-position:
+      8px 23px, 23px 8px,
+      calc(100% - 24px) 23px, calc(100% - 25px) 8px,
+      8px calc(100% - 25px), 23px calc(100% - 24px),
+      calc(100% - 24px) calc(100% - 25px), calc(100% - 25px) calc(100% - 24px);
+    background-repeat: no-repeat;
+  }
+  .viewer[data-layout="press"] .vsheet { padding: 4vw; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,.18); }
+  .viewer[data-layout="press"] .vsheet img { border: 0; box-shadow: none; }
+  .viewer[data-layout="press"] .vmod { margin: 0 0 64px; }
+  .viewer[data-layout="press"] .vlabel { display: block; margin: 0 0 6px; padding: 0 24px; font: 500 12px/1.2 var(--mono); text-transform: uppercase; }
+  .viewer[data-layout="press"] .vstamp {
+    position: absolute; top: 2px; right: 4px; z-index: 2; width: 92px; height: 92px; border-radius: 50%;
+    border: 3px solid #D62828; color: #D62828; display: grid; place-content: center; text-align: center;
+    font: 500 16px/1 var(--mono); text-transform: uppercase; transform: rotate(-12deg); pointer-events: none;
+    background: rgba(255,255,255,.7);
+  }
+  .viewer[data-layout="press"] .vtext {
+    max-width: 680px; margin: 6vw auto; padding: 22px 0; text-align: center;
+    border-block: 6px double var(--ink); font: 400 19px/1.6 var(--body);
+  }
+  .viewer[data-layout="press"] .vnext { background: #fff; border: 2px solid var(--ink); box-shadow: 0 18px 40px rgba(0,0,0,.18); }
+  .viewer[data-layout="press"] .vback { background: var(--ink); color: #EDEAE4; }
+
+  /* ===== billboard: giant tilted poster, stickers, slogans ===== */
+  .viewer[data-layout="billboard"] { --focus: var(--ink); background: var(--p-dom); color: var(--p-on-dom); }
+  .viewer[data-layout="billboard"] .vtop { background: var(--p-dom); color: var(--p-on-dom); border-color: var(--ink); }
+  .viewer[data-layout="billboard"] .vnav .btn { background: var(--paper); color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+  .viewer[data-layout="billboard"] .vnav .btn.ink { background: var(--ink); color: var(--paper); }
+  .viewer[data-layout="billboard"] .vhero { overflow: hidden; padding: 48px 18px 64px; isolation: isolate; }
+  .viewer[data-layout="billboard"] .vghost {
+    position: absolute; left: -10%; right: -10%; top: 8%; z-index: 0; overflow: hidden; pointer-events: none;
+    transform: rotate(-6deg);
+  }
+  .viewer[data-layout="billboard"] .vghost span {
+    display: block; white-space: nowrap; font: 400 clamp(72px, 16vw, 230px)/.92 var(--display); text-transform: uppercase;
+    color: transparent; -webkit-text-stroke: 2px rgba(20,18,26,.25);
+    -webkit-text-stroke: 2px color-mix(in srgb, var(--p-on-dom) 25%, transparent);
+  }
+  .viewer[data-layout="billboard"] .vhero-cover { z-index: 1; width: 100%; max-width: 1100px; margin: 0 auto; transform: rotate(-2deg); }
+  .viewer[data-layout="billboard"] .vhero-cover img { border: 10px solid var(--paper); box-shadow: 18px 18px 0 var(--ink); }
+  .viewer[data-layout="billboard"] .vsticker {
+    position: absolute; top: -34px; right: -10px; z-index: 2; width: 132px; height: 132px; border-radius: 50%;
+    border: 3px solid var(--ink); background: var(--yellow); color: var(--ink); display: grid; place-content: center; text-align: center;
+    font: 700 15px/1.05 var(--body); text-transform: uppercase; transform: rotate(12deg);
+  }
+  .viewer[data-layout="billboard"] .vhero-txt { position: relative; z-index: 1; margin-top: 48px; text-align: center; }
+  .viewer[data-layout="billboard"] .vhero-title { color: var(--p-on-dom); }
+  .viewer[data-layout="billboard"] .vkick { justify-content: center; }
+  .viewer[data-layout="billboard"] .vmod { margin: 0 0 72px; }
+  .viewer[data-layout="billboard"] .vitems { width: 88%; }
+  .viewer[data-layout="billboard"] .vitems.multi { width: 100%; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .viewer[data-layout="billboard"] .vmod.bl .vitems { margin-right: auto; transform: rotate(-1.5deg); }
+  .viewer[data-layout="billboard"] .vmod.br .vitems { margin-left: auto; transform: rotate(1.5deg); }
+  .viewer[data-layout="billboard"] .vitem img { border: 8px solid var(--paper); box-shadow: 10px 10px 0 var(--ink); }
+  .viewer[data-layout="billboard"] .vtext {
+    max-width: 900px; margin: 0 auto 72px; padding: 28px 32px; transform: rotate(-1deg);
+    background: var(--p-accent); color: var(--p-on-accent); box-shadow: 10px 10px 0 var(--ink);
+    font: 700 clamp(20px, 2.4vw, 30px)/1.25 var(--body);
+  }
+  .viewer[data-layout="billboard"] .vtext.slogan-big { font: 400 clamp(28px, 5vw, 72px)/1 var(--display); text-transform: uppercase; }
+  .viewer[data-layout="billboard"] .vnext { background: var(--p-accent); color: var(--p-on-accent); border-color: var(--ink); box-shadow: 12px 12px 0 var(--ink); transform: rotate(-1deg); }
+  .viewer[data-layout="billboard"] .vnext img { border: 6px solid var(--paper); }
+  .viewer[data-layout="billboard"] .vback { background: var(--paper); color: var(--ink); }
+
+  @media (max-width: 760px) {
+    .viewer .vnav { gap: 8px; }
+    .viewer .vnav .btn { padding: 10px 11px; font-size: 12px; }
+    .viewer .vbody { padding-block: 22px 64px; }
+    .viewer .vhero { margin-bottom: 40px; }
+    .viewer .vhero-cover { transform: none; }
+    .viewer .vtext { font-size: 16px; padding: 18px 0; }
+    .viewer .vhero-title { font-size: clamp(28px, 9vw, 48px); }
+    .viewer[data-layout="brandbook"] .vhero-title { font-size: clamp(28px, 9vw, 48px); }
+    .viewer[data-layout="cinema"] .vhero-title { font-size: clamp(28px, 9vw, 48px); }
+    .viewer .vmod { margin-bottom: 22px; }
+    .viewer .vitems.multi { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .viewer .vnext { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; padding: 12px; }
+    .viewer .vnext-l { font-size: 12px; }
+    .viewer[data-layout="brandbook"] .vhero { grid-template-columns: minmax(0, 1fr); }
+    .viewer[data-layout="brandbook"] .vmod { margin-bottom: 14vw; }
+    .viewer[data-layout="brandbook"] .vmod.w-l, .viewer[data-layout="brandbook"] .vmod.w-r { width: 100%; }
+    .viewer[data-layout="brandbook"] .vtext { padding-left: 16px; }
+    .viewer .vbrief { padding: 20px; }
+    .viewer .vbrief .vb-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+    .viewer[data-layout="cinema"] .vhero { padding-block: 10vw; }
+    .viewer[data-layout="cinema"] .vtext { font-size: 17px; }
+    .viewer[data-layout="cinema"] .vlabel { font-size: 11px; }
+    .viewer[data-layout="press"] .vstamp { width: 72px; height: 72px; font-size: 13px; right: 0; }
+    .viewer[data-layout="press"] .vsheet { padding: 6vw; }
+    .viewer[data-layout="press"] .vtext { font-size: 17px; }
+    .viewer[data-layout="feed"] .vmods { columns: 1; }
+    .viewer[data-layout="feed"] .vhero-cover,
+    .viewer[data-layout="feed"] .vpost.tilt-a,
+    .viewer[data-layout="feed"] .vpost.tilt-b { transform: none; }
+    .viewer[data-layout="feed"] .vtext { max-width: 100%; transform: none; }
+    .viewer[data-layout="billboard"] .vhero { padding: 40px 18px 56px; }
+    .viewer[data-layout="billboard"] .vhero-cover { transform: rotate(-.8deg); }
+    .viewer[data-layout="billboard"] .vitems { width: 100%; }
+    .viewer[data-layout="billboard"] .vmod.bl .vitems { transform: rotate(-.8deg); }
+    .viewer[data-layout="billboard"] .vmod.br .vitems { transform: rotate(.8deg); }
+    .viewer[data-layout="billboard"] .vitem img { border-width: 5px; box-shadow: 6px 6px 0 var(--ink); }
+    .viewer[data-layout="billboard"] .vhero-cover img { border-width: 6px; box-shadow: 10px 10px 0 var(--ink); }
+    .viewer[data-layout="billboard"] .vsticker { width: 96px; height: 96px; top: -26px; right: -4px; font-size: 11px; }
+    .viewer[data-layout="billboard"] .vtext { transform: rotate(-.6deg); padding: 20px; box-shadow: 6px 6px 0 var(--ink); }
+    .viewer[data-layout="billboard"] .vnext { transform: rotate(-.6deg); box-shadow: 6px 6px 0 var(--ink); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .viewer, .viewer *, .viewer *::before, .viewer *::after { transition: none !important; animation: none !important; }
+  }
+
+  /* ---------- custom cursor (desktop, motion allowed) ---------- */
+  .cursor {
+    position: fixed; left: 0; top: 0; z-index: 200; width: 22px; height: 22px; border-radius: 50%;
+    background: #fff; mix-blend-mode: difference; pointer-events: none;
+    transform: translate(-50%, -50%); transition: width .2s, height .2s;
+  }
+  .cursor.big { width: 64px; height: 64px; }
+
+  /* ---------- responsive ---------- */
+  @media (min-width: 761px) {
+    h1 { font-size: clamp(56px, 9.5vw, 160px); }
+    .pic { right: 0; top: 50%; transform: translateY(-50%); width: clamp(220px, 21vw, 300px); }
+    .badge { width: clamp(96px, 8vw, 120px); }
+    .b1 { left: -10%; }
+    .b2 { left: -10%; }
+    .b3 { right: -6%; }
+    .tickets { gap: 0; }
+    .ticket + .ticket { margin-top: -14px; }
+    .ticket:nth-child(2) { z-index: 1; }
+  }
+  @media (max-width: 760px) {
+    .pic { position: relative; top: auto; right: auto; width: min(230px, 62vw); margin: 48px auto 0; }
+    .b1 { left: -8%; }
+    .b3 { right: -8%; }
+    .badge { width: 104px; }
+    .ticket:nth-child(2), .ticket:nth-child(3) { margin-left: 0; }
+    .crow { grid-template-columns: minmax(0, 1fr); }
+    .copy { justify-self: start; }
+    /* wall: two-column feel, gentler tilt, no overlaps */
+    .poster, .poster.l, .poster.m, .poster.s { width: calc(50% - 12px); }
+    .poster.first { width: 100%; }
+    .poster { transform: rotate(clamp(-2deg, var(--rot, 0deg), 2deg)); }
+    .plabel { left: -6px; bottom: -12px; max-width: 92%; padding: 4px 7px 4px 6px; gap: 6px; }
+    .ptitle { font-size: 14px; }
+    .pno { font-size: 11px; }
+    .top-pick { width: 72px; height: 72px; top: -16px; right: -10px; font-size: 10px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .track { transform: none; }
+  }
+
+  /* ===== press, wide sheets: per-project opt-in (PROJECT_OVERRIDES wideSheets) ===== */
+  .viewer[data-layout="press"][data-wide="true"] .vbody { max-width: min(1500px, 100%); padding-left: max(16px, 2vw); padding-right: max(16px, 2vw); }
+  .viewer[data-layout="press"][data-wide="true"] .vsheet { max-width: min(1500px, 100%); padding: clamp(10px, 1.6vw, 22px); }
+
+  /* ===== press, fit-to-screen: per-project opt-in (PROJECT_OVERRIDES fitScreen) ===== */
+  /* each whole print proof is visible without scrolling: the sheet shrink-wraps its image, crop marks and
+     the PRINT PROOF label / OK stamp stay anchored to the sheet */
+  .viewer[data-layout="press"][data-fit="true"] .vmod { width: fit-content; max-width: 100%; margin: 0 auto 64px; }
+  .viewer[data-layout="press"][data-fit="true"] .vsheet-wrap { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="press"][data-fit="true"] .vsheet { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="press"][data-fit="true"] .vitem img {
+    max-height: calc(100vh - 190px); width: auto; max-width: 100%; height: auto; display: block; margin-inline: auto;
+  }
+  @media (max-width: 760px) {
+    .viewer[data-layout="press"][data-fit="true"] .vitem img { max-height: calc(100vh - 140px); }
+  }
+
+  /* ===== 100% detail panels under a print proof (PROJECT_OVERRIDES details) ===== */
+  .viewer[data-layout="press"] .vdetail { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 18px 0 0; }
+  .viewer[data-layout="press"] .vdsheet { margin: 0; padding: 10px; background: #fff; box-shadow: 0 12px 28px rgba(0,0,0,.16); min-width: 0; }
+  .viewer[data-layout="press"] .vdlabel { display: block; margin: 0 0 6px; font: 500 12px/1.2 var(--mono); text-transform: uppercase; }
+  .viewer[data-layout="press"] .vdsheet img { display: block; width: 100%; height: auto; border: 0; box-shadow: none; }
+  @media (max-width: 760px) { .viewer[data-layout="press"] .vdetail { grid-template-columns: minmax(0, 1fr); } }
+
+  /* ===== click-to-zoom lightbox (body images only) ===== */
+  img.zoomable { cursor: zoom-in; }
+  img.zoomable:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+  .lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(10,10,12,.96); color: #F2EFE8; }
+  .lightbox :focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+  .lb-scroll { position: absolute; inset: 0; display: grid; overflow: auto; overscroll-behavior: contain; }
+  .lb-img { display: block; margin: auto; max-width: 96vw; max-height: 92vh; width: auto; height: auto; object-fit: contain; cursor: zoom-in; }
+  .lightbox.is-actual .lb-img { max-width: none; max-height: none; cursor: zoom-out; }
+  .lb-close {
+    position: absolute; top: max(14px, env(safe-area-inset-top, 0px)); right: 16px; z-index: 2;
+    padding: 12px 16px; border: 3px solid var(--ink); background: var(--yellow); color: var(--ink);
+    font: 500 14px/1 var(--mono); letter-spacing: .04em; text-transform: uppercase; cursor: pointer;
+    box-shadow: 5px 5px 0 var(--blue);
+  }
+  .lb-close:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--blue); }
+  @media (prefers-reduced-motion: reduce) { .lightbox *, .lightbox *::before { transition: none !important; animation: none !important; } }
+
+  /* ===== global fit, all layouts: every hero cover and body image fits on screen under the sticky top bar.
+     Images keep their aspect ratio (never cropped). Frames, sheets and cards shrink-wrap the displayed picture,
+     and each layout's decoration (sprockets, SCENE labels, FIG captions, crop marks, stamps, borders) stays on that frame ===== */
+  .viewer .vhero-cover img,
+  .viewer .vmod .vitem img,
+  .viewer .vsec-panel img,
+  .viewer .vsheet img {
+    display: block; box-sizing: border-box; width: auto; height: auto; max-width: 100%;
+    max-height: calc(100vh - 170px); object-fit: contain; margin-inline: auto;
+  }
+  .viewer .vhero-cover, .viewer .vitem, .viewer .vsheet, .viewer .vsheet-wrap, .viewer .vsec-panel, .viewer .vcmp-frame { box-sizing: border-box; }
+  .viewer .vitem { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="brandbook"] .vmod.w-l .vitem { margin-inline: 0 auto; }
+  .viewer[data-layout="brandbook"] .vmod.w-r .vitem { margin-inline: auto 0; }
+
+  /* heroes: the cover shrink-wraps its picture */
+  .viewer[data-layout="cinema"] .vhero-cover,
+  .viewer[data-layout="brandbook"] .vhero-cover,
+  .viewer[data-layout="press"] .vhero-cover { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="billboard"] .vhero-cover { width: fit-content; max-width: min(100%, 1100px); margin: 0 auto; }
+  .viewer[data-layout="feed"] .vhero-cover { width: fit-content; max-width: min(100%, 920px); margin: 18px auto 0; }
+  /* default cinema hero: title overlay spans the displayed cover only, the cover is centred on black */
+  .viewer[data-layout="cinema"] .vhero-cover { position: relative; }
+  .viewer[data-layout="cinema"] .vhero-cover img { border: 0; }
+
+  /* body modules: press sheets and cinema scenes shrink-wrap their picture; labels and strips stay attached */
+  .viewer[data-layout="press"] .vmod { width: fit-content; max-width: 100%; margin: 0 auto 64px; }
+  .viewer[data-layout="press"] .vsheet-wrap,
+  .viewer[data-layout="press"] .vsheet { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="cinema"] .vmod { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="cinema"] .vmod .vlabel { padding: 0; }
+  .viewer[data-layout="cinema"] .vitems { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .viewer[data-layout="billboard"] .vmod:not(.multi) .vitems { width: fit-content; max-width: 100%; }
+  .viewer[data-layout="feed"] .vsec-panel { width: fit-content; max-width: 100%; }
+  .viewer[data-layout="feed"] .vsec-panel img { width: auto; }
+
+  /* compare frame (feed before/after): height capped, width follows the picture's aspect ratio (--ar set in JS) */
+  .viewer .vcmp-frame {
+    width: min(100%, calc((100vh - 170px) * var(--ar, 1.5))); max-height: calc(100vh - 170px); margin-inline: auto;
+  }
+  @media (max-width: 760px) {
+    .viewer .vhero-cover img,
+    .viewer .vmod .vitem img,
+    .viewer .vsec-panel img,
+    .viewer .vsheet img { max-height: calc(100vh - 130px); }
+    .viewer .vcmp-frame { width: min(100%, calc((100vh - 130px) * var(--ar, 1.5))); max-height: calc(100vh - 130px); }
+  }
+
+  /* ===== per-project flags (PROJECT_OVERRIDES): bg = page colour with no stripes, darkCards = dark feed cards,
+     bigPosts = one centred column of large posts, compactPosts = a small feed card ===== */
+  .viewer[data-bg="true"] { background-color: var(--p-bg, #0B0B0C); background-image: none; color: var(--p-on-dom); }
+  .viewer[data-bg="true"] .vtop { background: var(--p-bg, #0B0B0C); color: var(--p-on-dom); border-color: #F2EFE8; }
+  .viewer[data-dark-cards="true"] .vmod.vpost { background: #161618; color: #F2EFE8; border: 1px solid rgba(255,255,255,.12); }
+  .viewer[data-dark-cards="true"] .vmod.vpost .vitem img { background: transparent; }
+  .viewer[data-dark-cards="true"] .vspon { color: #B8B3AB; }
+  .viewer[data-dark-cards="true"] .vlike { color: #F2EFE8; }
+  .viewer[data-dark-cards="true"] .vpost-a { color: #F2EFE8; }
+  .viewer[data-big-posts="true"] .vmods { columns: 1; }
+  .viewer[data-big-posts="true"] .vmod.vpost { max-width: min(900px, 100%); margin: 0 auto 28px; }
+  .viewer[data-big-posts="true"] .vpost.tilt-a,
+  .viewer[data-big-posts="true"] .vpost.tilt-b { transform: none; }
+  .viewer[data-big-posts="true"] .vpost .vitems.multi { grid-template-columns: minmax(0, 1fr); }
+  .viewer[data-big-posts="true"] .vpost .vitem { width: 100%; }
+  .viewer[data-big-posts="true"] .vpost .vitem img { width: auto; max-width: 100%; max-height: calc(100vh - 230px); margin: 0 auto; object-fit: contain; }
+  .viewer[data-big-posts="true"] .vtext { max-width: 760px; margin: 0 auto 28px; text-align: center; }
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-compact { max-width: 520px; margin-left: auto; margin-right: auto; }
+  /* darkPostFiles: a single post card (the black logo post) gets a dark card; all other cards stay white */
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-dark { background: #000000; color: #F2EFE8; border: 1px solid rgba(255,255,255,.12); }
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-dark .vitem img { background: #000000; border-radius: 0; }
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-dark .vspon { color: #B8B3AB; }
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-dark .vlike,
+  .viewer[data-layout="feed"] .vmod.vpost.vpost-dark .vpost-a { color: #F2EFE8; }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true" hidden></div>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">A.EMAD®</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="open" href="#contact">OPEN FOR WORK ✦</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" id="top">
+    <div class="stage">
+      <h1><span class="sr">Abdelrahman Emad</span>
+        <span class="w w1" aria-hidden="true">Abdel</span>
+        <span class="w w2" aria-hidden="true">Rahman<svg class="scribble" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M6 24 C 90 4, 170 42, 270 22 S 430 6, 520 26 S 582 30, 594 12"/></svg></span>
+        <span class="w w3" aria-hidden="true"><span class="blk">Emad</span></span>
+      </h1>
+      <div class="pic">
+        <figure class="sticker"><img src="img/me.jpg" alt="Portrait of Abdelrahman Emad" width="1254" height="1254"></figure>
+        <span class="badge b1"><b>300+</b>Designs</span>
+        <span class="badge b2"><b>30+</b>Clients</span>
+        <span class="badge b3"><b>2 hrs</b>Social post</span>
+      </div>
+    </div>
+    <p class="pitch">I make brands loud. Identities from zero, ad campaigns that bring real customers, and AI video ads that stop the scroll.</p>
+    <div class="cta">
+      <a class="btn ink" href="#work">See the work ↓</a>
+      <a class="btn" href="#contact">Hire me</a>
+    </div>
+  </section>
+
+  <div class="band-wrap" aria-label="Brands">
+    <div class="band">
+      <div class="track">
+        <span>TALABAT ✶ KEETA ✶ RUFFLES ✶ CASTROL ✶ VIRGIN MOBILE ✶ HERR'S ✶ UNCLE RAY'S ✶ LUQMA ✶ NŪN ROASTERS ✶ </span>
+        <span aria-hidden="true">TALABAT ✶ KEETA ✶ RUFFLES ✶ CASTROL ✶ VIRGIN MOBILE ✶ HERR'S ✶ UNCLE RAY'S ✶ LUQMA ✶ NŪN ROASTERS ✶ </span>
+      </div>
+    </div>
+  </div>
+  <p class="cap wrap">Brands I've designed campaigns &amp; identities for — commissioned and concept work.</p>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <p class="kicker">The index</p>
+      <h2 class="display wall-h">THE WALL</h2>
+      <p class="wall-sub" id="count">28 PROJECTS · BEST FIRST · CLICK ANY POSTER</p>
+      <div class="pills" id="pills" role="group" aria-label="Filter projects"></div>
+      <div class="wall" id="wall"></div>
+    </div>
+  </section>
+
+  <section class="exp" id="experience">
+    <div class="wrap">
+      <p class="kicker">Experience</p>
+      <h2 class="display">Where I've been</h2>
+      <div class="tickets">
+        <article class="ticket">
+          <div class="tk-head"><h3>Zed</h3><span class="tk-date">Mar 2024 – Jun 2026</span></div>
+          <p class="tk-role">Graphic Designer · On-site, Ismailia, Egypt</p>
+          <ul>
+            <li>Built the brand identity from zero as the sole designer.</li>
+            <li>WhatsApp ad campaigns that brought in 200+ client inquiries, many became signed projects.</li>
+            <li>Bilingual website in Figma, a 13-page company profile and 50+ social posts.</li>
+          </ul>
+        </article>
+        <article class="ticket">
+          <div class="tk-head"><h3>Skate Marketplace</h3><span class="tk-date">Feb 2023 – Mar 2024</span></div>
+          <p class="tk-role">Graphic Designer · Remote</p>
+          <ul>
+            <li>Built the brand identity from zero as the sole designer.</li>
+            <li>Ad campaigns that attracted 200+ paying customers.</li>
+            <li>E-commerce website in Figma across 6 product categories.</li>
+          </ul>
+        </article>
+        <article class="ticket">
+          <div class="tk-head"><h3>Freelance</h3><span class="tk-date">2021 – Present</span></div>
+          <p class="tk-role">Graphic Designer · Remote · Egypt, the GCC &amp; the USA</p>
+          <ul>
+            <li>300+ designs for 30+ clients, with repeat clients coming back.</li>
+            <li>Social media designs in 2 hours or less, full brand identities in 3–4 days.</li>
+            <li>15+ AI video ads, for brands including First Cola and Schneider.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="toolbox">
+        <p class="kicker">Toolbox</p>
+        <div class="chips">
+          <span class="chip">Photoshop</span>
+          <span class="chip">Illustrator</span>
+          <span class="chip">InDesign</span>
+          <span class="chip">Premiere Pro</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Google Flow</span>
+          <span class="chip">Nano Banana</span>
+          <span class="chip">Gemini</span>
+          <span class="chip">ChatGPT</span>
+          <span class="chip">Claude</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reels" id="reels" aria-labelledby="reelsTitle">
+    <div class="wrap">
+      <p class="kicker">MADE WITH GOOGLE FLOW · NANO BANANA · GEMINI</p>
+      <h2 class="display reels-h" id="reelsTitle">AI VIDEO ADS</h2>
+      <p class="reels-intro">Cinematic product ads produced with generative AI — tap any reel to play.</p>
+      <div class="reels-grid" id="reelsGrid"></div>
+    </div>
+    <script type="application/json" id="reels-data">
+[
+  {
+    "file": "video/v01.mp4",
+    "poster": "video/v01_poster.webp",
+    "title": "First Cola",
+    "w": 608,
+    "h": 1080,
+    "duration": 64.67
+  },
+  {
+    "file": "video/v02.mp4",
+    "poster": "video/v02_poster.webp",
+    "title": "Bubble Gun",
+    "w": 608,
+    "h": 1080,
+    "duration": 78.29
+  },
+  {
+    "file": "video/v03.mp4",
+    "poster": "video/v03_poster.webp",
+    "title": "Buggy",
+    "w": 608,
+    "h": 1080,
+    "duration": 62.63
+  },
+  {
+    "file": "video/v04.mp4",
+    "poster": "video/v04_poster.webp",
+    "title": "Drawing Tablet",
+    "w": 608,
+    "h": 1080,
+    "duration": 46.88
+  },
+  {
+    "file": "video/v05.mp4",
+    "poster": "video/v05_poster.webp",
+    "title": "Magnetic Lego",
+    "w": 608,
+    "h": 1080,
+    "duration": 90.92
+  },
+  {
+    "file": "video/v06.mp4",
+    "poster": "video/v06_poster.webp",
+    "title": "Police Car Toy",
+    "w": 608,
+    "h": 1080,
+    "duration": 120.71
+  },
+  {
+    "file": "video/v07.mp4",
+    "poster": "video/v07_poster.webp",
+    "title": "World Cup with Schneider",
+    "w": 608,
+    "h": 1080,
+    "duration": 50.5
+  },
+  {
+    "file": "video/v09.mp4",
+    "poster": "video/v09_poster.webp",
+    "title": "The Big Boss",
+    "w": 608,
+    "h": 1080,
+    "duration": 53.46
+  }
+]
+</script>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="display misreg">Let's make some noise.</h2>
+      <div class="rows">
+        <div class="crow">
+          <div>
+            <p class="lbl">Email</p>
+            <span class="val" id="em">abdelrahman.emad.official@gmail.com</span>
+          </div>
+          <button class="copy" type="button" data-copy="em">COPY</button>
+        </div>
+        <div class="crow">
+          <div>
+            <p class="lbl">Phone / WhatsApp</p>
+            <span class="val" id="ph">+20 155 304 6556</span>
+          </div>
+          <button class="copy" type="button" data-copy="ph">COPY</button>
+        </div>
+        <div class="crow">
+          <div>
+            <p class="lbl">Behance</p>
+            <a class="val" href="https://www.behance.net/abdelrahman_emad" target="_blank" rel="noopener noreferrer">behance.net/abdelrahman_emad ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="foot"><span>© Abdelrahman Emad — made loud in Ismailia, Egypt</span></div>
+</footer>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="vTitle" data-layout="billboard">
+  <div class="vtop">
+    <div class="wrap vtop-in">
+      <span class="vmeta" id="vMeta"></span>
+      <h2 class="vtitle" id="vTitle"></h2>
+      <div class="vnav">
+        <button class="btn" type="button" id="vPrev" aria-label="Previous project">←</button>
+        <button class="btn" type="button" id="vNext" aria-label="Next project">→</button>
+        <a class="btn" id="vBehance" href="#" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+        <button class="btn ink" type="button" id="vClose">Close ✕</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap vbody" id="vBody"></div>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lb-scroll">
+    <img class="lb-img" id="lbImg" alt="">
+  </div>
+  <button class="lb-close" type="button" id="lbClose">✕ CLOSE</button>
+</div>
+
+<script type="application/json" id="projects-data">[{"id":"257593433","title":"LUQMA — A Bite of Brand Identity","cat":"branding","url":"https://www.behance.net/gallery/257593433/LUQMA-A-Bite-of-Brand-Identity","images":[{"f":"01.webp","t":"01_t.webp","w":2633,"h":516},{"f":"02.webp","t":"02_t.webp","w":1122,"h":1402},{"f":"03.webp","t":"03_t.webp","w":1122,"h":1402},{"f":"04.webp","t":"04_t.webp","w":1122,"h":1402},{"f":"05.webp","t":"05_t.webp","w":1122,"h":1402},{"f":"06.webp","t":"06_t.webp","w":1122,"h":1402},{"f":"07.webp","t":"07_t.webp","w":1122,"h":1402},{"f":"08.webp","t":"08_t.webp","w":1619,"h":971},{"f":"09.webp","t":"09_t.webp","w":1620,"h":971},{"f":"10.webp","t":"10_t.webp","w":1620,"h":971},{"f":"11.webp","t":"11_t.webp","w":1466,"h":1073},{"f":"12.webp","t":"12_t.webp","w":1466,"h":1073},{"f":"13.webp","t":"13_t.webp","w":1466,"h":1073},{"f":"14.webp","t":"14_t.webp","w":1466,"h":1073},{"f":"15.webp","t":"15_t.webp","w":1466,"h":1073},{"f":"16.webp","t":"16_t.webp","w":1466,"h":1073},{"f":"17.webp","t":"17_t.webp","w":1466,"h":1073},{"f":"18.webp","t":"18_t.webp","w":1466,"h":1073}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2633,"h":516}]},{"t":"text","align":"center","text":"LUQMA — A Bite of Brand Identity"},{"t":"text","align":"center","text":"A bold and playful visual identity for a conceptual Saudi casual dining brand, featuring distinctive logo design, Brand Identity, vibrant colors, and cohesive packaging applications.\nConcept. Design. Experience."},{"t":"img","items":[{"f":"02.webp","w":1122,"h":1402},{"f":"03.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"04.webp","w":1122,"h":1402},{"f":"05.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"06.webp","w":1122,"h":1402},{"f":"07.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"08.webp","w":1619,"h":971}]},{"t":"img","items":[{"f":"09.webp","w":1620,"h":971}]},{"t":"img","items":[{"f":"10.webp","w":1620,"h":971}]},{"t":"img","items":[{"f":"11.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"12.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"13.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"14.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"15.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"16.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"17.webp","w":1466,"h":1073}]},{"t":"img","items":[{"f":"18.webp","w":1466,"h":1073}]}],"pal":{"dom":"#A92615","accent":"#2BD7EE","dark":"#57220A","light":"#F6EFE4","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#E2BB8F","#F2DDBF","#9D5A2C","#B78556","#D6A068","#57220A"]}},{"id":"214580255","title":"Herr's Ghost Pepper Chips — Social Media","cat":"social","url":"https://www.behance.net/gallery/214580255/Herrs-Ghost-Pepper-Chips-Social-Media-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":1920,"h":342},{"f":"02.webp","t":"02_t.webp","w":3493,"h":2388},{"f":"03.webp","t":"03_t.webp","w":2000,"h":2000},{"f":"04.webp","t":"04_t.webp","w":2000,"h":2000},{"f":"05.webp","t":"05_t.webp","w":2000,"h":2000},{"f":"06.webp","t":"06_t.webp","w":2000,"h":2000},{"f":"07.webp","t":"07_t.webp","w":3000,"h":1050},{"f":"08.gif","t":"08_t.webp","w":1920,"h":1313},{"f":"09.webp","t":"09_t.webp","w":3000,"h":1050},{"f":"10.webp","t":"10_t.webp","w":2000,"h":2000},{"f":"11.webp","t":"11_t.webp","w":2000,"h":2000},{"f":"12.webp","t":"12_t.webp","w":3000,"h":1050}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1920,"h":342}]},{"t":"text","align":"center","text":"Social Media Campaign for Herr’s Ghost Pepper Chips\nTo increase brand awareness and drive engagement for Herr’s Ghost Pepper Chips by leveraging bold, edgy visuals and a playful yet daring tone to target thrill-seekers, and spice enthusiasts on social media platforms"},{"t":"img","items":[{"f":"02.webp","w":3493,"h":2388}]},{"t":"text","align":"center","text":"Campaign Theme\nThe campaign revolves around the intensity of Herr’s Ghost Pepper Chips, using creative, exaggerated metaphors to convey the extreme heat of the chips"},{"t":"img","items":[{"f":"03.webp","w":2000,"h":2000},{"f":"04.webp","w":2000,"h":2000}]},{"t":"text","align":"center","text":"Campaign Goals\n\nAwareness: Achieve 1M impressions across all platforms.\nEngagement: Increase likes, comments, and shares by 25%.\nSales: Boost sales of Herr’s Ghost Pepper Chips by 20% during the campaign period."},{"t":"img","items":[{"f":"05.webp","w":2000,"h":2000},{"f":"06.webp","w":2000,"h":2000}]},{"t":"img","items":[{"f":"07.webp","w":3000,"h":1050}]},{"t":"img","items":[{"f":"08.gif","w":1920,"h":1313}]},{"t":"img","items":[{"f":"09.webp","w":3000,"h":1050}]},{"t":"img","items":[{"f":"10.webp","w":2000,"h":2000},{"f":"11.webp","w":2000,"h":2000}]},{"t":"img","items":[{"f":"12.webp","w":3000,"h":1050}]}],"pal":{"dom":"#DD1309","accent":"#2BE5EE","dark":"#000000","light":"#EBEFF0","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#104F7B","#000000","#A8BCBD","#940204","#00040A","#132133"]}},{"id":"191951149","title":"Skate Marketplace — Brand Identity & Web Design","cat":"branding","url":"https://www.behance.net/gallery/191951149/Brand-Identity-Web-design-Skate-Marketplace","images":[{"f":"01.webp","t":"01_t.webp","w":3299,"h":2328},{"f":"02.webp","t":"02_t.webp","w":3840,"h":2160},{"f":"03.webp","t":"03_t.webp","w":3840,"h":2160},{"f":"04_anim.webp","t":"04_t.webp","w":1400,"h":788},{"f":"05.webp","t":"05_t.webp","w":3709,"h":2554},{"f":"06.webp","t":"06_t.webp","w":2995,"h":1670},{"f":"07.webp","t":"07_t.webp","w":2995,"h":1670},{"f":"08.webp","t":"08_t.webp","w":2995,"h":1670},{"f":"09.gif","t":"09_t.webp","w":2995,"h":1670},{"f":"10.gif","t":"10_t.webp","w":3840,"h":2160},{"f":"11_anim.webp","t":"11_t.webp","w":927,"h":1400},{"f":"12.webp","t":"12_t.webp","w":1298,"h":2539},{"f":"13.webp","t":"13_t.webp","w":3840,"h":5190},{"f":"14.webp","t":"14_t.webp","w":3704,"h":4866},{"f":"15.webp","t":"15_t.webp","w":1298,"h":2539},{"f":"16.gif","t":"16_t.webp","w":3704,"h":4866},{"f":"17.webp","t":"17_t.webp","w":3840,"h":2160},{"f":"18.webp","t":"18_t.webp","w":3840,"h":2160},{"f":"19.webp","t":"19_t.webp","w":3840,"h":2160},{"f":"20.webp","t":"20_t.webp","w":1080,"h":1920},{"f":"21.webp","t":"21_t.webp","w":1080,"h":1920},{"f":"22.webp","t":"22_t.webp","w":1080,"h":1920},{"f":"23.webp","t":"23_t.webp","w":3840,"h":2160},{"f":"24.webp","t":"24_t.webp","w":3840,"h":11803},{"f":"25.webp","t":"25_t.webp","w":3840,"h":2160},{"f":"26.webp","t":"26_t.webp","w":3840,"h":2160}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":3299,"h":2328}]},{"t":"text","align":"center","text":"FROM CONCEPT TO COMPLETION\nFrom brand strategy to the full brand identity, logo design, colors, fonts, illustrations, icons, web design, social media designs, copywriting... all the graphics\n\nSkate Marketplace Full Brand Identity - logo design\n&\nOn-Brand Engaging Graphics For A Variety Of Media Maintaining The Brand Across All Marketing Channels"},{"t":"img","items":[{"f":"02.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Project Overview\nTarget Audience:-\nSkate Community (Merchants and consumers)\n\nObjectives:-\nSince this market is very chaotic, the brand's main goal is to simplify the process by connecting all the customers and trusted sellers in one organized marketplace"},{"t":"text","align":"center","text":"I choose to go with the slogan : (let's keep It simple)  to recall the brand experience\n\nAnd the calm fantasy look and feel for the logo and the creative direction since it is the most appealing for this target audience\n\nbrings them into an experience in a different imaginary world\n\nAlso to create a calm and relaxing experience to build trust with our customers"},{"t":"img","items":[{"f":"03.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Hero Section\n\nI wanted to go with a very relatable background for the hero section of the website so customers can relate and engage with the brand immediately\n\nTherefore, I chose to create a design that combines all the activities and vibes in the skate community\n\nAnd that was the real challenge here since it is very complicated to gather all of that in one design without being visually annoying, not to mention the composition itself\n​​​​​​​"},{"t":"text","align":"center","text":"Design Process"},{"t":"img","items":[{"f":"04_anim.webp","w":1400,"h":788}]},{"t":"text","align":"center","text":"Customization for different screen sizes is an essential step"},{"t":"img","items":[{"f":"05.webp","w":3709,"h":2554}]},{"t":"text","align":"center","text":"Samples Of The Icons Designs"},{"t":"img","items":[{"f":"06.webp","w":2995,"h":1670}]},{"t":"img","items":[{"f":"07.webp","w":2995,"h":1670}]},{"t":"img","items":[{"f":"08.webp","w":2995,"h":1670}]},{"t":"img","items":[{"f":"09.gif","w":2995,"h":1670}]},{"t":"text","align":"center","text":"Some Of The Design Elements\nSince I have a strong attention to detail, most of the designs elements have been designed separately"},{"t":"img","items":[{"f":"10.gif","w":3840,"h":2160}]},{"t":"img","items":[{"f":"11_anim.webp","w":927,"h":1400},{"f":"12.webp","w":1298,"h":2539}]},{"t":"img","items":[{"f":"13.webp","w":3840,"h":5190}]},{"t":"img","items":[{"f":"14.webp","w":3704,"h":4866}]},{"t":"img","items":[{"f":"15.webp","w":1298,"h":2539},{"f":"16.gif","w":3704,"h":4866}]},{"t":"text","align":"center","text":"Some Of The Website Pages Designs & Copywriting\nSince I have great experience in copywriting, along with designs I wrote the whole website copies"},{"t":"img","items":[{"f":"17.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"18.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"19.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Maintain brand consistency across all channels"},{"t":"img","items":[{"f":"20.webp","w":1080,"h":1920},{"f":"21.webp","w":1080,"h":1920},{"f":"22.webp","w":1080,"h":1920}]},{"t":"img","items":[{"f":"23.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"The Subscription Page For Merchants\ndesign & copywriting"},{"t":"img","items":[{"f":"24.webp","w":3840,"h":11803}]},{"t":"text","align":"center","text":"Samples Of Subcategories"},{"t":"img","items":[{"f":"25.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"26.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#486877","accent":"#EE692B","dark":"#000000","light":"#F4F4F4","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#F4F4F4","#19252F","#8FB4BB","#000000","#01121F","#DEEBEB"]}},{"id":"242289729","title":"Business Card Designs","cat":"print","url":"https://www.behance.net/gallery/242289729/Business-Card-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":2560,"h":1440},{"f":"02.webp","t":"02_t.webp","w":2560,"h":1440},{"f":"03.webp","t":"03_t.webp","w":2560,"h":1440},{"f":"04.webp","t":"04_t.webp","w":2560,"h":1440}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"مجموعة تصاميم Business Cards لبراندات حقيقية،\nكل تصميم معمول عشان يعكس هوية البراند بشكل بسيط وعملي وقابل للطباعة."},{"t":"img","items":[{"f":"01.webp","w":2560,"h":1440}]},{"t":"img","items":[{"f":"02.webp","w":2560,"h":1440}]},{"t":"img","items":[{"f":"03.webp","w":2560,"h":1440}]},{"t":"img","items":[{"f":"04.webp","w":2560,"h":1440}]}],"pal":{"dom":"#A63F3F","accent":"#2BEEEE","dark":"#202543","light":"#E1E1E0","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#C9CFD0","#DEDEDC","#E1E1E0","#BBC8C8","#D9D9D9","#202543"]}},{"id":"206173977","title":"RUFFLES — Creative Ads","cat":"advertising","url":"https://www.behance.net/gallery/206173977/RUFFLESs-Creative-Ad-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":2390,"h":389},{"f":"02.webp","t":"02_t.webp","w":3838,"h":2700},{"f":"03.gif","t":"03_t.webp","w":2500,"h":1757},{"f":"04.webp","t":"04_t.webp","w":2160,"h":2700}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2390,"h":389}]},{"t":"text","align":"center","text":"Creative Ad Design For RUFFLES's Snacks"},{"t":"img","items":[{"f":"02.webp","w":3838,"h":2700}]},{"t":"img","items":[{"f":"03.gif","w":2500,"h":1757}]},{"t":"img","items":[{"f":"04.webp","w":2160,"h":2700}]}],"pal":{"dom":"#F1C574","accent":"#94C96E","dark":"#000000","light":"#EAEBE0","onDom":"#14121A","onAccent":"#14121A","swatches":["#EAEBE0","#797452","#D1DFC8","#F3EEC2","#000000"]}},{"id":"231106453","title":"Talabat — Beyond Limits","cat":"advertising","url":"https://www.behance.net/gallery/231106453/Talabat-Beyond-Limits","images":[{"f":"01.webp","t":"01_t.webp","w":1400,"h":217},{"f":"02.webp","t":"02_t.webp","w":1920,"h":1048},{"f":"03.webp","t":"03_t.webp","w":1080,"h":1080},{"f":"04.webp","t":"04_t.webp","w":1080,"h":1080},{"f":"05.webp","t":"05_t.webp","w":1408,"h":768},{"f":"06.webp","t":"06_t.webp","w":1080,"h":1080},{"f":"07.webp","t":"07_t.webp","w":1080,"h":1080}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1400,"h":217}]},{"t":"text","align":"center","text":"Beyond Limits"},{"t":"text","align":"center","text":"Client: Talabat \n \nProject Type: Social Media Campaign – Conceptual  \n\nObjective:  \nA bold and humorous visual campaign proving that Talabat delivers *anytime, anywhere* – even in the most unexpected or extreme situations.  \nThe goal: Deliver the brand's speed promise with a cinematic twist."},{"t":"img","items":[{"f":"02.webp","w":1920,"h":1048}]},{"t":"img","items":[{"f":"03.webp","w":1080,"h":1080},{"f":"04.webp","w":1080,"h":1080}]},{"t":"text","align":"center","text":"This campaign is built on one simple idea:\nSpeed so unreal, it feels like fiction.\n\nI crafted surreal scenarios – from skydiving to race tracks – to exaggerate Talabat’s lightning-fast service in a smart and entertaining way.\n\nThe goal was to take Talabat’s known identity and push its speed promise to the extreme.\nEvery scene was designed to feel cinematic, exaggerated, yet clear in message."},{"t":"img","items":[{"f":"05.webp","w":1408,"h":768}]},{"t":"img","items":[{"f":"06.webp","w":1080,"h":1080},{"f":"07.webp","w":1080,"h":1080}]},{"t":"text","align":"center","text":"I believe the best ads are the ones that stick in your mind after a single frame.\nHere, we let imagination deliver the message – literally.\nIf you enjoyed the concept, feel free to share or reach out!"},{"t":"text","align":"center","text":"Thanks"}],"pal":{"dom":"#AB6C49","accent":"#2BA8EE","dark":"#010103","light":"#F4EFE7","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#333234","#201616","#DAC9AF","#76412F","#01091B","#010103"]}},{"id":"209067071","title":"The Wild Is Yours — Car Advertising","cat":"advertising","url":"https://www.behance.net/gallery/209067071/Car-Advertising-_The-Wild-Is-Yours","images":[{"f":"01.webp","t":"01_t.webp","w":2800,"h":3007},{"f":"02.webp","t":"02_t.webp","w":2500,"h":532},{"f":"03.webp","t":"03_t.webp","w":2500,"h":658},{"f":"04.webp","t":"04_t.webp","w":2500,"h":472},{"f":"05.webp","t":"05_t.webp","w":2500,"h":817},{"f":"06.webp","t":"06_t.webp","w":2500,"h":322},{"f":"07.webp","t":"07_t.webp","w":2500,"h":817},{"f":"08.webp","t":"08_t.webp","w":2500,"h":649}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2800,"h":3007}]},{"t":"img","items":[{"f":"02.webp","w":2500,"h":532}]},{"t":"text","align":"center","text":"Objective"},{"t":"text","align":"center","text":"To create a visually striking and memorable car ad that effectively communicates the vehicle’s power, speed, and control in wild environments, while reinforcing its capability to dominate even the most rugged terrains. The ad's theme should appeal to adventurous, thrill-seeking customers who value performance, durability, and design"},{"t":"img","items":[{"f":"03.webp","w":2500,"h":658}]},{"t":"img","items":[{"f":"04.webp","w":2500,"h":472}]},{"t":"img","items":[{"f":"05.webp","w":2500,"h":817}]},{"t":"img","items":[{"f":"06.webp","w":2500,"h":322}]},{"t":"img","items":[{"f":"07.webp","w":2500,"h":817}]},{"t":"img","items":[{"f":"08.webp","w":2500,"h":649}]}],"pal":{"dom":"#933FA6","accent":"#4FEE2B","dark":"#000000","light":"#EEECEE","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#07385E","#000002","#39181D","#012036","#190005","#143E62"]}},{"id":"257504101","title":"NŪN ROASTERS — Logo Design","cat":"branding","url":"https://www.behance.net/gallery/257504101/NUN-ROASTERS-Logo-Design","images":[{"f":"01.webp","t":"01_t.webp","w":2633,"h":440},{"f":"02.webp","t":"02_t.webp","w":1254,"h":1254},{"f":"03.webp","t":"03_t.webp","w":1254,"h":1254},{"f":"04.webp","t":"04_t.webp","w":1254,"h":1254},{"f":"05.webp","t":"05_t.webp","w":1024,"h":1536},{"f":"06.webp","t":"06_t.webp","w":1254,"h":1254}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2633,"h":440}]},{"t":"text","align":"center","text":"NŪN ROASTERS — Logo Design"},{"t":"text","align":"center","text":"A conceptual brand identity for NŪN ROASTERS, a premium Saudi specialty coffee brand. The project explores Arabic typography through a custom wordmark where the final letter ن becomes a sensory symbol inspired by the pleasure of exceptional coffee."},{"t":"img","items":[{"f":"02.webp","w":1254,"h":1254},{"f":"03.webp","w":1254,"h":1254},{"f":"04.webp","w":1254,"h":1254}]},{"t":"img","items":[{"f":"05.webp","w":1024,"h":1536},{"f":"06.webp","w":1254,"h":1254}]},{"t":"text","align":"center","text":"Have a project in mind? Let’s create something meaningful together.\nFeel free to reach out for collaborations and inquiries. I’d love to hear from you"}],"pal":{"dom":"#7B4E2A","accent":"#2B97EE","dark":"#190C05","light":"#F6EDE4","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#CA9465","#5F2E12","#A66C41","#381B09","#EDC6A1","#190C05"]}},{"id":"257384531","title":"Nabat & Hagat — Cinematic Ad Concepts","cat":"advertising","url":"https://www.behance.net/gallery/257384531/Nabat-Hagat-Cinematic-Advertising-Concepts","images":[{"f":"01.webp","t":"01_t.webp","w":2633,"h":440},{"f":"02.webp","t":"02_t.webp","w":1024,"h":1536},{"f":"03.webp","t":"03_t.webp","w":1024,"h":1536},{"f":"04.webp","t":"04_t.webp","w":1024,"h":1536},{"f":"05.webp","t":"05_t.webp","w":1122,"h":1402},{"f":"06.webp","t":"06_t.webp","w":1024,"h":1536},{"f":"07.webp","t":"07_t.webp","w":1024,"h":1536},{"f":"08.webp","t":"08_t.webp","w":1254,"h":1254},{"f":"09.webp","t":"09_t.webp","w":1254,"h":1254}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2633,"h":440}]},{"t":"text","align":"center","text":"Nabat & Hagat — Cinematic Campaign Concepts"},{"t":"text","align":"center","text":"A conceptual advertising series exploring how product storytelling, cinematic worlds, and bold visual direction can transform everyday products into memorable brand experiences.\nEach concept builds a unique visual universe around the product, combining dramatic lighting, immersive environments, and striking typography while keeping the product at the center of the story.\nThe goal: Turn ordinary product advertising into visuals that capture attention and create an emotional connection.\nIndependent speculative concepts. Not an official campaign."},{"t":"img","items":[{"f":"02.webp","w":1024,"h":1536},{"f":"03.webp","w":1024,"h":1536},{"f":"04.webp","w":1024,"h":1536}]},{"t":"img","items":[{"f":"05.webp","w":1122,"h":1402},{"f":"06.webp","w":1024,"h":1536},{"f":"07.webp","w":1024,"h":1536}]},{"t":"img","items":[{"f":"08.webp","w":1254,"h":1254},{"f":"09.webp","w":1254,"h":1254}]},{"t":"text","align":"center","text":"🖋️​​​​​​​Great brands deserve visuals that tell a story. Let's create something unforgettable together."}],"pal":{"dom":"#633A26","accent":"#2BAEEE","dark":"#000000","light":"#F5EFE5","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#E8D9C1","#C5B7A7","#B48A6C","#26201A","#677469","#000000"]}},{"id":"257552111","title":"أثر — Sportswear Brand Identity","cat":"branding","url":"https://www.behance.net/gallery/257552111/-Sportswear-Brand-Identity","images":[{"f":"01.webp","t":"01_t.webp","w":2633,"h":440},{"f":"02.webp","t":"02_t.webp","w":1122,"h":1402},{"f":"03.webp","t":"03_t.webp","w":1122,"h":1402},{"f":"04.webp","t":"04_t.webp","w":1122,"h":1402},{"f":"05.webp","t":"05_t.webp","w":1122,"h":1402}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2633,"h":440}]},{"t":"text","align":"center","text":"أثر — تصميم لوجو لبراند رياضي"},{"t":"text","align":"center","text":"Logo Design Brief \n\nاسم البراند : أثر \n\nالمجال: الملابس الرياضية \n\n: نبذة عن البراند\nبراند رياضي يستهدف الأشخاص المهتمين باللياقة البدنية وتطوير أدائهم، ويؤمن بأن النجاح بيتحقق من خلال الالتزام والاستمرارية، وأن كل مجهود بيترك أثر.\n\n :هدف التصميم\nتصميم لوجو عربي مميز يعكس القوة والانضباط والتطور المستمر، ويكون بسيطًا وسهل التمييز والتطبيق على الملابس الرياضية.\n\n: الفكرة الإبداعية\nتوظيف الحروف العربية في تصميم يحمل معنى مرتبطًا باسم البراند، مع إمكانية دمج مفهوم التقدم والحركة داخل تكوين الحروف نفسه.\n\n : الجمهور المستهدف\n. الشباب والرياضيون المهتمون بالتمرين، والأداء الرياضي، وأسلوب الحياة النشط"},{"t":"img","items":[{"f":"02.webp","w":1122,"h":1402},{"f":"03.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"04.webp","w":1122,"h":1402},{"f":"05.webp","w":1122,"h":1402}]},{"t":"text","align":"center","text":"تعتمد الفكرة على دمج المعنى داخل الحروف العربية، حيث ترمز النقاط الثلاث المتدرجة في حرف «ث» إلى التقدم والتطور المستمر.\nتصميم بسيط يجمع بين قوة الحروف العربية وفكرة إن كل خطوة بتسيب أثر.\nأثر — كل حركة تترك بصمتها."},{"t":"text","align":"center","text":"يسعدني التعاون معكم في مشاريع إبداعية جديدة، وتحويل الأفكار إلى أعمال مميزة تترك أثرًا."}],"pal":{"dom":"#A6653F","accent":"#2BA7EE","dark":"#040506","light":"#F1EEEA","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#1E1E1F","#CAC0B1","#171818","#131313","#0C0C0D","#040506"]}},{"id":"193274055","title":"Mind Map Book — Adobe InDesign","cat":"print","url":"https://www.behance.net/gallery/193274055/Mind-map-book-design-With-Adobe-InDesign","images":[{"f":"01.webp","t":"01_t.webp","w":3608,"h":2500},{"f":"02.webp","t":"02_t.webp","w":3840,"h":2160},{"f":"03.webp","t":"03_t.webp","w":3840,"h":2160},{"f":"04.webp","t":"04_t.webp","w":3840,"h":2160}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"Design a mind map book for learning the German language"},{"t":"img","items":[{"f":"01.webp","w":3608,"h":2500}]},{"t":"img","items":[{"f":"02.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"03.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"04.webp","w":3840,"h":2160}]}],"pal":{"dom":"#3F73A6","accent":"#EE8C2B","dark":"#1D1E1F","light":"#F7F7F7","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#F2F2F2","#D1D1D1","#EAEAEA","#F7F7F7","#F3F2F2"]}},{"id":"230613431","title":"Keeta — بنجيك وين ما تكون","cat":"advertising","url":"https://www.behance.net/gallery/230613431/Keeta-Creative-Delivery-Campaign","images":[{"f":"01.webp","t":"01_t.webp","w":2560,"h":1440},{"f":"02.webp","t":"02_t.webp","w":1080,"h":1080},{"f":"03.webp","t":"03_t.webp","w":1080,"h":1080},{"f":"04.webp","t":"04_t.webp","w":1920,"h":1047},{"f":"05.webp","t":"05_t.webp","w":1080,"h":1080},{"f":"06.webp","t":"06_t.webp","w":1080,"h":1080}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2560,"h":1440}]},{"t":"text","align":"center","text":"Keeta — “بنجيك وين ما تكون” Creative Delivery Campaign"},{"t":"text","align":"center","text":"A satirical visual campaign I designed to showcase creative thinking and execution.🔥\nBased on the idea “We’ll reach you no matter where,” each visual presents an impossible yet comical delivery scenario, tailored for a Saudi/Gulf audience."},{"t":"img","items":[{"f":"02.webp","w":1080,"h":1080},{"f":"03.webp","w":1080,"h":1080}]},{"t":"img","items":[{"f":"04.webp","w":1920,"h":1047}]},{"t":"text","align":"center","text":"Each image presents an absurd or nearly impossible delivery situation — yet feels believable through realistic visuals and local cultural insight.\nThe campaign is designed for a Gulf audience, combining humor, exaggeration, and everyday struggles with a strong visual punch."},{"t":"img","items":[{"f":"05.webp","w":1080,"h":1080},{"f":"06.webp","w":1080,"h":1080}]}],"pal":{"dom":"#3C758A","accent":"#9E885D","dark":"#000000","light":"#F1F2E9","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#4F4038","#B1C8D1","#DFE0CB","#202830","#06222E","#000000"]}},{"id":"231897363","title":"Mserve — Home Maintenance Campaign","cat":"advertising","url":"https://www.behance.net/gallery/231897363/-Mserve","images":[{"f":"01.webp","t":"01_t.webp","w":1550,"h":310},{"f":"02.webp","t":"02_t.webp","w":1200,"h":1714},{"f":"03.webp","t":"03_t.webp","w":1200,"h":1714},{"f":"04.webp","t":"04_t.webp","w":1200,"h":1714},{"f":"05.webp","t":"05_t.webp","w":1200,"h":1714}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1550,"h":310}]},{"t":"text","align":"center","text":"حملة إعلانية عن خدمات الصيانة المنزلية من Mserve"},{"t":"text","align":"center","text":"في البروجكت ده اشتغلت على حملة دعائية لبراند \"Mserve\" بخليط بين الكوميديا والدراما السينمائية.\nكان الهدف إننا نوصل خدمات الصيانة بشكل مختلف، يخلي الناس تفتكر الإعلان والبراند مع أول مشكلة تحصل في البيت.\nالحملة كلها معمولة بأسلوب بصري واقعي، فيه لمسة سينمائية وضحك، عشان نوصل رسالة بسيطة:\nلما الدنيا تبوظ... Mserve جاهزين ينقذوا الموقف."},{"t":"img","items":[{"f":"02.webp","w":1200,"h":1714},{"f":"03.webp","w":1200,"h":1714}]},{"t":"img","items":[{"f":"04.webp","w":1200,"h":1714},{"f":"05.webp","w":1200,"h":1714}]}],"pal":{"dom":"#A6783F","accent":"#2B81EE","dark":"#000612","light":"#EFEFEB","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#1B2A34","#070F1B","#49352D","#CFCDC1","#25151A","#000612"]}},{"id":"231688193","title":"Virgin Mobile — Coverage Campaign","cat":"advertising","url":"https://www.behance.net/gallery/231688193/Virgin-Mobile-","images":[{"f":"01.webp","t":"01_t.webp","w":1038,"h":176},{"f":"02.webp","t":"02_t.webp","w":1200,"h":1714},{"f":"03.webp","t":"03_t.webp","w":1200,"h":1714},{"f":"04.webp","t":"04_t.webp","w":1200,"h":1714},{"f":"05.webp","t":"05_t.webp","w":1200,"h":1714}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1038,"h":176}]},{"t":"text","align":"center","text":"Virgin Mobile – حملة إعلانية خيالية عن قوة التغطية"},{"t":"text","align":"center","text":"ده واحد من مجموعة أفكار إبداعية لإعلانات شبكات الموبايل، بجرب فيها اكسر الشكل التقليدي للإعلانات ونقدّم سيناريوهات غير متوقعة بتوضح قوة الشبكة بشكل بسيط ومؤثر.\n\nالهدف إن الإعلان يكون معبّر، قريب من الناس، و\"يحكي قصة\" من أول نظرة."},{"t":"img","items":[{"f":"02.webp","w":1200,"h":1714},{"f":"03.webp","w":1200,"h":1714}]},{"t":"img","items":[{"f":"04.webp","w":1200,"h":1714},{"f":"05.webp","w":1200,"h":1714}]}],"pal":{"dom":"#6F3F33","accent":"#2BC7EE","dark":"#000000","light":"#E3DDD6","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#28312F","#E3DDD6","#221918","#090D0E","#927D6E","#010815"]}},{"id":"231417951","title":"كفى — Anti-Smoking Awareness Campaign","cat":"advertising","url":"https://www.behance.net/gallery/231417951/_","images":[{"f":"01.webp","t":"01_t.webp","w":2218,"h":365},{"f":"02.webp","t":"02_t.webp","w":1250,"h":1786},{"f":"03.webp","t":"03_t.webp","w":1250,"h":1786},{"f":"04.webp","t":"04_t.webp","w":1080,"h":1079},{"f":"05.webp","t":"05_t.webp","w":1200,"h":1714},{"f":"06.webp","t":"06_t.webp","w":1200,"h":1714},{"f":"07.webp","t":"07_t.webp","w":1200,"h":1714}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2218,"h":365}]},{"t":"text","align":"center","text":"\"كفى\" – حملة بصرية توعوية لمكافحة التدخين والمخدرات"},{"t":"text","align":"center","text":"📝 Project Description (الوصف):\nفي هذا المشروع، قمت بتصميم حملة إعلانية بصرية إبداعية للتوعية بأخطار التدخين والمخدرات. الهدف من الحملة كان لفت الانتباه بطريقة غير مباشرة وذكية، من خلال رسائل مرئية تخاطب الوعي والعاطفة دون اللجوء لصور مباشرة تقليدية.\nالحملة اعتمدت على أسلوب بصري نظيف، ذكي، وملئ بالمساحات البيضاء، لتوصيل الرسائل بطريقة تترك الأثر دون صدمة، وتخلق مساحة للتفكير والتأمل."},{"t":"text","align":"center","text":"🎯 Creative Direction:\nاستخدام أسلوب واقعي مع لمسة سريالية.\nتسليط الضوء على النتائج النفسية والجسدية للمخدرات والتدخين بدون عرضها بشكل مباشر.\nدمج عناصر بصرية ذكية (مثل الانعكاسات، الدخان، الظل) لإيصال المعنى بطريقة فنية.\nالتركيز على رسائل بسيطة لكنها قوية التأثير."},{"t":"img","items":[{"f":"02.webp","w":1250,"h":1786},{"f":"03.webp","w":1250,"h":1786}]},{"t":"img","items":[{"f":"04.webp","w":1080,"h":1079}]},{"t":"text","align":"center","text":"🎨 Visual Style:\nWhite space واسع لخلق راحة بصرية وجذب الانتباه.\nألوان الهوية البصرية لجمعية \"كفى\" (الأزرق الغامق والأخضر الليموني).\nصور واقعية معالجة بشكل احترافي مع إضافات خيالية تعزز الرسالة.\nتناسق بين الصور والكابتشنات لتحقيق تأثير عاطفي وعقلي في نفس الوقت"},{"t":"text","align":"center","text":"🖼️ Deliverables:\nسلسلة من التصاميم الإعلانية الاجتماعية بصيغة بوستات إنستجرام.\nموكاب احترافي لمحاكاة شكل البوست داخل السوشيال ميديا.\nكتابة كابتشنات توعوية قصيرة مرفقة مع كل تصميم."},{"t":"img","items":[{"f":"05.webp","w":1200,"h":1714},{"f":"06.webp","w":1200,"h":1714},{"f":"07.webp","w":1200,"h":1714}]}],"pal":{"dom":"#A63F73","accent":"#2BEE8C","dark":"#000000","light":"#ECEFED","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#1A1D24","#CBD3CE","#094B62","#35272E","#8D9995","#061B28"]}},{"id":"257647739","title":"Little Majlis — Social Media Campaigns","cat":"social","url":"https://www.behance.net/gallery/257647739/Little-Majlis-Social-Media-Campaigns","images":[{"f":"01.webp","t":"01_t.webp","w":1484,"h":1060},{"f":"02.webp","t":"02_t.webp","w":1122,"h":1402},{"f":"03.webp","t":"03_t.webp","w":1122,"h":1402},{"f":"04.webp","t":"04_t.webp","w":1122,"h":1402},{"f":"05.webp","t":"05_t.webp","w":1122,"h":1402},{"f":"06.webp","t":"06_t.webp","w":1122,"h":1402},{"f":"07.webp","t":"07_t.webp","w":1122,"h":1402},{"f":"08.webp","t":"08_t.webp","w":1484,"h":1060},{"f":"09.webp","t":"09_t.webp","w":1484,"h":1060},{"f":"10.webp","t":"10_t.webp","w":1484,"h":1060},{"f":"11.webp","t":"11_t.webp","w":1483,"h":1061},{"f":"12.webp","t":"12_t.webp","w":1482,"h":1061},{"f":"13.webp","t":"13_t.webp","w":1484,"h":1060}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1484,"h":1060}]},{"t":"img","items":[{"f":"02.webp","w":1122,"h":1402},{"f":"03.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"04.webp","w":1122,"h":1402},{"f":"05.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"06.webp","w":1122,"h":1402},{"f":"07.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"08.webp","w":1484,"h":1060}]},{"t":"img","items":[{"f":"09.webp","w":1484,"h":1060}]},{"t":"img","items":[{"f":"10.webp","w":1484,"h":1060}]},{"t":"img","items":[{"f":"11.webp","w":1483,"h":1061}]},{"t":"img","items":[{"f":"12.webp","w":1482,"h":1061}]},{"t":"img","items":[{"f":"13.webp","w":1484,"h":1060}]}],"pal":{"dom":"#AF613E","accent":"#2BB1EE","dark":"#000C1F","light":"#EFE7D4","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#EFE7D4","#B1997E","#4F5153","#EFC8A8","#441D19","#CCC3A4"]}},{"id":"231747481","title":"نقي — Water Brand Campaign","cat":"advertising","url":"https://www.behance.net/gallery/231747481/_","images":[{"f":"01.webp","t":"01_t.webp","w":1200,"h":1714},{"f":"02.webp","t":"02_t.webp","w":1200,"h":1714},{"f":"03.webp","t":"03_t.webp","w":1200,"h":1714},{"f":"04.webp","t":"04_t.webp","w":1200,"h":1714}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"حملة دعائية لبراند مياه \"نقي\""},{"t":"text","align":"center","text":"ده بروجكت دعائي اشتغلت عليه لبراند مياه اسمه \"نقي\"، وكان الهدف منه تقديم أفكار مختلفة ومميزة تبرز اسم البراند وتعبر عن قيمته.\nركّزت في التصاميم على إن الرسالة تكون بسيطة، بس تلفت الانتباه وتسيب أثر."},{"t":"img","items":[{"f":"01.webp","w":1200,"h":1714},{"f":"02.webp","w":1200,"h":1714}]},{"t":"img","items":[{"f":"03.webp","w":1200,"h":1714},{"f":"04.webp","w":1200,"h":1714}]}],"pal":{"dom":"#35454F","accent":"#EE762B","dark":"#030202","light":"#ECEEEE","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#6B7271","#222424","#14171A","#ACB7B5","#3E2822","#56504B"]}},{"id":"257432161","title":"RAWSET — Creative Ad Concepts","cat":"advertising","url":"https://www.behance.net/gallery/257432161/RAWSET-Creative-Advertising-Concepts","images":[{"f":"01.webp","t":"01_t.webp","w":2633,"h":440},{"f":"02.webp","t":"02_t.webp","w":1122,"h":1402},{"f":"03.webp","t":"03_t.webp","w":1122,"h":1402},{"f":"04.webp","t":"04_t.webp","w":1122,"h":1402},{"f":"05.webp","t":"05_t.webp","w":1122,"h":1402},{"f":"06.webp","t":"06_t.webp","w":1122,"h":1402},{"f":"07.webp","t":"07_t.webp","w":1122,"h":1402},{"f":"08.webp","t":"08_t.webp","w":1254,"h":1254},{"f":"09.webp","t":"09_t.webp","w":1254,"h":1254}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":2633,"h":440}]},{"t":"text","align":"center","text":"RAWSET — Creative Advertising Concepts"},{"t":"text","align":"center","text":"Project Overview:\nA series of conceptual advertising visuals inspired by RAWSET, a Saudi streetwear and gymwear brand.\nThe project explores bold visual direction, modern styling, and product-focused compositions to present the brand’s apparel in an engaging and impactful way.\nProject Type: Conceptual Advertising Design\nIndustry: Fashion & Streetwear\nDesign Focus: Art Direction, Advertising Visuals, Product Presentation"},{"t":"img","items":[{"f":"02.webp","w":1122,"h":1402},{"f":"03.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"04.webp","w":1122,"h":1402},{"f":"05.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"06.webp","w":1122,"h":1402},{"f":"07.webp","w":1122,"h":1402}]},{"t":"img","items":[{"f":"08.webp","w":1254,"h":1254},{"f":"09.webp","w":1254,"h":1254}]},{"t":"text","align":"center","text":"Have a project in mind? Let’s create something bold and meaningful together. I’m always open to new collaborations. ♡"}],"pal":{"dom":"#665144","accent":"#2BA3EE","dark":"#000000","light":"#F0EEEA","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#090909","#181716","#CAC1B5","#3D2420","#170E0E","#030303"]}},{"id":"213283067","title":"Castrol Engine Oil — Social Media","cat":"social","url":"https://www.behance.net/gallery/213283067/Castrol-Engine-Oil-Social-Media-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":1920,"h":368},{"f":"02.webp","t":"02_t.webp","w":3000,"h":2000},{"f":"03.webp","t":"03_t.webp","w":2357,"h":2357},{"f":"04.webp","t":"04_t.webp","w":2000,"h":2000},{"f":"05.webp","t":"05_t.webp","w":3162,"h":2158},{"f":"06.gif","t":"06_t.webp","w":2602,"h":1859},{"f":"07.webp","t":"07_t.webp","w":2900,"h":1979},{"f":"08.gif","t":"08_t.webp","w":2602,"h":1859}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1920,"h":368}]},{"t":"text","align":"center","text":"Castrol Engine Oil - Social Media Campaign\n\nThis project features a creative social media campaign designed for Castrol, a leading engine oil company. The designs aim to highlight the brand's core values: engine protection, peak performance, and reliability."},{"t":"img","items":[{"f":"02.webp","w":3000,"h":2000}]},{"t":"img","items":[{"f":"03.webp","w":2357,"h":2357},{"f":"04.webp","w":2000,"h":2000}]},{"t":"img","items":[{"f":"05.webp","w":3162,"h":2158}]},{"t":"img","items":[{"f":"06.gif","w":2602,"h":1859}]},{"t":"img","items":[{"f":"07.webp","w":2900,"h":1979}]},{"t":"img","items":[{"f":"08.gif","w":2602,"h":1859}]}],"pal":{"dom":"#439DAE","accent":"#EE4A2B","dark":"#000005","light":"#EFF6F8","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#D7EAF1","#CCDEE3","#EFF6F8","#000005","#243146","#00406B"]}},{"id":"231241201","title":"Roaya — Eye Clinic Visual Campaign","cat":"advertising","url":"https://www.behance.net/gallery/231241201/Visual-Campaign-for-an-Eye-Clinic-Roaya-","images":[{"f":"01.webp","t":"01_t.webp","w":1400,"h":183},{"f":"02.webp","t":"02_t.webp","w":1300,"h":1857},{"f":"03.webp","t":"03_t.webp","w":1300,"h":1857},{"f":"04.webp","t":"04_t.webp","w":1024,"h":1024},{"f":"05.webp","t":"05_t.webp","w":1024,"h":1024},{"f":"06.webp","t":"06_t.webp","w":1080,"h":1543},{"f":"07.webp","t":"07_t.webp","w":1200,"h":1714},{"f":"08.webp","t":"08_t.webp","w":1200,"h":1714}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":1400,"h":183}]},{"t":"text","align":"center","text":"Visual Campaign for an Eye Clinic"},{"t":"text","align":"center","text":"🟦 Overview | نظرة عامة\n\nThis creative campaign was developed for Roaya Eye Center, a leading Saudi eye clinic specialized in ophthalmology and laser vision correction. The campaign aims to raise awareness about serious eye conditions—like glaucoma (المياه الزرقاء) and cataracts (المياه البيضاء)—and encourage early screening and treatment."},{"t":"text","align":"center","text":"🎯 Objective | الهدف\n\nTo grab attention through emotional, dramatic, and metaphorical visuals that:\n• Warn about the silent damage caused by glaucoma.\n• Encourage timely eye checkups before symptoms appear.\n• Promote laser vision correction as a way to reclaim freedom and clarity."},{"t":"text","align":"center","text":"🖼️ Concept & Visual Style\n\nThe visuals mix realism, symbolism, and cartoonish exaggeration to reflect both the seriousness of the condition and the hope in effective treatment."},{"t":"img","items":[{"f":"02.webp","w":1300,"h":1857},{"f":"03.webp","w":1300,"h":1857}]},{"t":"img","items":[{"f":"04.webp","w":1024,"h":1024},{"f":"05.webp","w":1024,"h":1024}]},{"t":"img","items":[{"f":"06.webp","w":1080,"h":1543},{"f":"07.webp","w":1200,"h":1714},{"f":"08.webp","w":1200,"h":1714}]},{"t":"text","align":"center","text":"Thanks"}],"pal":{"dom":"#3F8AA6","accent":"#EE5F2B","dark":"#000000","light":"#F5F5F1","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#0B2342","#F5F5F1","#14141F","#303746","#0B4870","#000000"]}},{"id":"203996385","title":"Uncle Ray's — Creative Ads","cat":"advertising","url":"https://www.behance.net/gallery/203996385/Uncle-Rays-Creative-Ad-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":3176,"h":889},{"f":"02.webp","t":"02_t.webp","w":2800,"h":1989},{"f":"03.webp","t":"03_t.webp","w":3840,"h":1363},{"f":"04.webp","t":"04_t.webp","w":1609,"h":2013},{"f":"05.webp","t":"05_t.webp","w":1609,"h":2013},{"f":"06.webp","t":"06_t.webp","w":3400,"h":1477},{"f":"07.webp","t":"07_t.webp","w":2089,"h":2651},{"f":"08.webp","t":"08_t.webp","w":2089,"h":2651},{"f":"09.webp","t":"09_t.webp","w":1562,"h":1304}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":3176,"h":889}]},{"t":"text","align":"center","text":"Boosting Uncle Ray's Brand with Creative Ad Designs"},{"t":"img","items":[{"f":"02.webp","w":2800,"h":1989}]},{"t":"img","items":[{"f":"03.webp","w":3840,"h":1363}]},{"t":"img","items":[{"f":"04.webp","w":1609,"h":2013},{"f":"05.webp","w":1609,"h":2013}]},{"t":"img","items":[{"f":"06.webp","w":3400,"h":1477}]},{"t":"img","items":[{"f":"07.webp","w":2089,"h":2651},{"f":"08.webp","w":2089,"h":2651}]},{"t":"img","items":[{"f":"09.webp","w":1562,"h":1304}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#3D6481","accent":"#A0262E","dark":"#000000","light":"#EAEBF1","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#000000","#63819D","#A9B0C6","#223344","#520009"]}},{"id":"195870763","title":"Social Media Designs","cat":"social","url":"https://www.behance.net/gallery/195870763/Social-Media-Designs","images":[{"f":"01.webp","t":"01_t.webp","w":2400,"h":1460},{"f":"02.webp","t":"02_t.webp","w":2400,"h":1460},{"f":"03.webp","t":"03_t.webp","w":2725,"h":1929},{"f":"04.webp","t":"04_t.webp","w":2000,"h":2000},{"f":"05.webp","t":"05_t.webp","w":2000,"h":2000},{"f":"06.webp","t":"06_t.webp","w":3840,"h":4669},{"f":"07.webp","t":"07_t.webp","w":3556,"h":2118},{"f":"08.webp","t":"08_t.webp","w":1920,"h":1080},{"f":"09.webp","t":"09_t.webp","w":1920,"h":1080},{"f":"10.webp","t":"10_t.webp","w":1920,"h":1080},{"f":"11.webp","t":"11_t.webp","w":1920,"h":1080},{"f":"12.webp","t":"12_t.webp","w":2800,"h":1867},{"f":"13.webp","t":"13_t.webp","w":2614,"h":1470},{"f":"14.webp","t":"14_t.webp","w":3840,"h":2160}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"Social Media Designs"},{"t":"img","items":[{"f":"01.webp","w":2400,"h":1460}]},{"t":"img","items":[{"f":"02.webp","w":2400,"h":1460}]},{"t":"img","items":[{"f":"03.webp","w":2725,"h":1929}]},{"t":"img","items":[{"f":"04.webp","w":2000,"h":2000},{"f":"05.webp","w":2000,"h":2000}]},{"t":"img","items":[{"f":"06.webp","w":3840,"h":4669}]},{"t":"img","items":[{"f":"07.webp","w":3556,"h":2118}]},{"t":"img","items":[{"f":"08.webp","w":1920,"h":1080}]},{"t":"img","items":[{"f":"09.webp","w":1920,"h":1080}]},{"t":"img","items":[{"f":"10.webp","w":1920,"h":1080}]},{"t":"img","items":[{"f":"11.webp","w":1920,"h":1080}]},{"t":"img","items":[{"f":"12.webp","w":2800,"h":1867}]},{"t":"img","items":[{"f":"13.webp","w":2614,"h":1470}]},{"t":"img","items":[{"f":"14.webp","w":3840,"h":2160}]}],"pal":{"dom":"#3FA69F","accent":"#EE2B39","dark":"#0C080C","light":"#FBF8FA","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#EFE4EF","#DED2C3","#FBF8FA","#F1DECC","#0C080C","#EBDDD6"]}},{"id":"209950577","title":"Full Brand — Strategy & Identity","cat":"branding","url":"https://www.behance.net/gallery/209950577/Full-Brand-(Strategy-Identity)-Logo-Design","images":[{"f":"01.webp","t":"01_t.webp","w":3000,"h":2887},{"f":"02.webp","t":"02_t.webp","w":2000,"h":1125},{"f":"03.webp","t":"03_t.webp","w":2000,"h":1125},{"f":"04.webp","t":"04_t.webp","w":2000,"h":1125},{"f":"05.webp","t":"05_t.webp","w":2000,"h":1125},{"f":"06.webp","t":"06_t.webp","w":1268,"h":489},{"f":"07.webp","t":"07_t.webp","w":1301,"h":883},{"f":"08.webp","t":"08_t.webp","w":3840,"h":2160},{"f":"09.webp","t":"09_t.webp","w":1600,"h":1143},{"f":"10.webp","t":"10_t.webp","w":2000,"h":1335},{"f":"11.webp","t":"11_t.webp","w":3840,"h":2160},{"f":"12.webp","t":"12_t.webp","w":1600,"h":1143},{"f":"13.webp","t":"13_t.webp","w":1502,"h":1333}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":3000,"h":2887}]},{"t":"text","align":"center","text":"Skate Marketplace Full Brand (Strategy - Identity) and logo design"},{"t":"img","items":[{"f":"02.webp","w":2000,"h":1125}]},{"t":"text","align":"center","text":"Target Audience:-\nSkate Community (Merchants and consumers)"},{"t":"img","items":[{"f":"03.webp","w":2000,"h":1125}]},{"t":"img","items":[{"f":"04.webp","w":2000,"h":1125}]},{"t":"img","items":[{"f":"05.webp","w":2000,"h":1125}]},{"t":"img","items":[{"f":"06.webp","w":1268,"h":489}]},{"t":"img","items":[{"f":"07.webp","w":1301,"h":883}]},{"t":"img","items":[{"f":"08.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"09.webp","w":1600,"h":1143},{"f":"10.webp","w":2000,"h":1335}]},{"t":"img","items":[{"f":"11.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"12.webp","w":1600,"h":1143},{"f":"13.webp","w":1502,"h":1333}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#3FA6A6","accent":"#EE2B2B","dark":"#000000","light":"#F8F8F8","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#F3F3F3","#EDEFEF","#F8F8F8","#000000"]}},{"id":"207535675","title":"Tiger — Creative Ad Design","cat":"advertising","url":"https://www.behance.net/gallery/207535675/Tiger-Creative-Ad-Design","images":[{"f":"01.webp","t":"01_t.webp","w":3838,"h":2804},{"f":"02.webp","t":"02_t.webp","w":1920,"h":1080},{"f":"03.webp","t":"03_t.webp","w":1746,"h":1164},{"f":"04.webp","t":"04_t.webp","w":1024,"h":576},{"f":"05.webp","t":"05_t.webp","w":1440,"h":1060},{"f":"06.webp","t":"06_t.webp","w":2007,"h":1003},{"f":"07.webp","t":"07_t.webp","w":1161,"h":1332},{"f":"08.webp","t":"08_t.webp","w":2160,"h":2700}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"img","items":[{"f":"01.webp","w":3838,"h":2804}]},{"t":"img","items":[{"f":"02.webp","w":1920,"h":1080},{"f":"03.webp","w":1746,"h":1164},{"f":"04.webp","w":1024,"h":576},{"f":"05.webp","w":1440,"h":1060},{"f":"06.webp","w":2007,"h":1003},{"f":"07.webp","w":1161,"h":1332}]},{"t":"img","items":[{"f":"08.webp","w":2160,"h":2700}]}],"pal":{"dom":"#4F6D6D","accent":"#EE2B2B","dark":"#0F171B","light":"#E3EAE9","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#E3EAE9","#898F89","#212E33","#424346","#B5C7C6","#0F171B"]}},{"id":"202239649","title":"Bamboo Juice — Social Media","cat":"social","url":"https://www.behance.net/gallery/202239649/Bamboo-juice-Social-Media-Design","images":[{"f":"01.webp","t":"01_t.webp","w":3840,"h":754},{"f":"02.webp","t":"02_t.webp","w":3556,"h":2118},{"f":"03.webp","t":"03_t.webp","w":1576,"h":1894},{"f":"04.webp","t":"04_t.webp","w":3500,"h":1969},{"f":"05.webp","t":"05_t.webp","w":1416,"h":877},{"f":"06.webp","t":"06_t.webp","w":2285,"h":1555},{"f":"07.webp","t":"07_t.webp","w":2000,"h":2000}],"cover":{"f":"cover.webp","w":782,"h":612},"mods":[{"t":"img","items":[{"f":"01.webp","w":3840,"h":754}]},{"t":"text","align":"center","text":"Bamboo Basil Watermelon Juice\nSocial Media Design"},{"t":"img","items":[{"f":"02.webp","w":3556,"h":2118}]},{"t":"img","items":[{"f":"03.webp","w":1576,"h":1894},{"f":"04.webp","w":3500,"h":1969}]},{"t":"img","items":[{"f":"05.webp","w":1416,"h":877},{"f":"06.webp","w":2285,"h":1555}]},{"t":"img","items":[{"f":"07.webp","w":2000,"h":2000}]}],"pal":{"dom":"#B44133","accent":"#2BD9EE","dark":"#3D0001","light":"#EAFADE","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#EAFADE","#E4FADD","#C0CC9C","#7A0001"]}},{"id":"192444175","title":"Graphic Design Collection","cat":"social","url":"https://www.behance.net/gallery/192444175/Graphic-Design","images":[{"f":"01.webp","t":"01_t.webp","w":3840,"h":2160},{"f":"02.gif","t":"02_t.webp","w":1920,"h":1080},{"f":"03.webp","t":"03_t.webp","w":3840,"h":2160},{"f":"04.gif","t":"04_t.webp","w":1920,"h":1080}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"Anime Store Brand\n Website Hero Section Background\n\nConcept :\nbreaking the barrier between the two worlds\n\nFor the anime community, they are very loyal to their favorite anime, heroes, etc., and in this anime merchandise brand we wanted to express how much this merch will emotionally connecting them to their favorite anime heroes."},{"t":"img","items":[{"f":"01.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Design Process"},{"t":"img","items":[{"f":"02.gif","w":1920,"h":1080}]},{"t":"img","items":[{"f":"03.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Design Process"},{"t":"img","items":[{"f":"04.gif","w":1920,"h":1080}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#805150","accent":"#2BEAEE","dark":"#000000","light":"#F1ECE9","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#181215","#D9CDC5","#AE9192","#451A1D","#453438","#07080B"]}},{"id":"192575769","title":"Merchandise Design","cat":"print","url":"https://www.behance.net/gallery/192575769/Merchandise-design","images":[{"f":"01.webp","t":"01_t.webp","w":3840,"h":850},{"f":"02.webp","t":"02_t.webp","w":3840,"h":2160},{"f":"03.webp","t":"03_t.webp","w":3840,"h":748},{"f":"04.webp","t":"04_t.webp","w":3508,"h":1972},{"f":"05.webp","t":"05_t.webp","w":3508,"h":1972},{"f":"06.webp","t":"06_t.webp","w":3508,"h":1972},{"f":"07.webp","t":"07_t.webp","w":3508,"h":1972},{"f":"08.webp","t":"08_t.webp","w":3508,"h":1972}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"Merchandise design"},{"t":"img","items":[{"f":"01.webp","w":3840,"h":850}]},{"t":"img","items":[{"f":"02.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"03.webp","w":3840,"h":748}]},{"t":"img","items":[{"f":"04.webp","w":3508,"h":1972}]},{"t":"img","items":[{"f":"05.webp","w":3508,"h":1972}]},{"t":"img","items":[{"f":"06.webp","w":3508,"h":1972}]},{"t":"img","items":[{"f":"07.webp","w":3508,"h":1972}]},{"t":"img","items":[{"f":"08.webp","w":3508,"h":1972}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#804F3B","accent":"#2BB5EE","dark":"#000000","light":"#EFEFEF","onDom":"#FFF7FB","onAccent":"#14121A","swatches":["#000000","#EFEFEF","#191719","#EBEBEB","#D2BFAC"]}},{"id":"192309803","title":"Climate Change Crisis — Ad Design","cat":"advertising","url":"https://www.behance.net/gallery/192309803/Climate-Change-Crisis-ADVERTISING-DESIGN","images":[{"f":"01.webp","t":"01_t.webp","w":3840,"h":2150},{"f":"02.webp","t":"02_t.webp","w":3840,"h":2160},{"f":"03.webp","t":"03_t.webp","w":3840,"h":2160},{"f":"04.webp","t":"04_t.webp","w":3840,"h":2160},{"f":"05.webp","t":"05_t.webp","w":3840,"h":1736},{"f":"06.webp","t":"06_t.webp","w":3840,"h":2160}],"cover":{"f":"cover.webp","w":808,"h":632},"mods":[{"t":"text","align":"center","text":"Social Media Advertising Campaign To Raise Awareness About The Climate Change Crisis"},{"t":"img","items":[{"f":"01.webp","w":3840,"h":2150}]},{"t":"img","items":[{"f":"02.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"03.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"04.webp","w":3840,"h":2160}]},{"t":"img","items":[{"f":"05.webp","w":3840,"h":1736}]},{"t":"img","items":[{"f":"06.webp","w":3840,"h":2160}]},{"t":"text","align":"center","text":"Thank You ❣︎"}],"pal":{"dom":"#A67D3F","accent":"#2B79EE","dark":"#000000","light":"#FFFFFF","onDom":"#FFF7FB","onAccent":"#FFF7FB","swatches":["#000000","#FFFFFF","#0C0B0D","#B9B9A1","#000001"]}}]</script>
+<script>
+(function () {
+  "use strict";
+  // Per-project tweaks requested by the owner. Keys are project ids.
+  const PROJECT_OVERRIDES = {
+    // Per-project tweaks requested by the owner. "sections" replaces p.mods with an ordered list of blocks (see sectionTo).
+    "257593433": { hideHero: true },   // LUQMA: start directly at the first logo figure
+    "257504101": { hideSwatches: true },   // NUN ROASTERS: brandbook without the COLOR SYSTEM block
+    "214580255": {
+      sections: [
+        {
+          "kind": "text",
+          "text": "Social Media Campaign for Herr’s Ghost Pepper Chips\nTo increase brand awareness and drive engagement for Herr’s Ghost Pepper Chips by leveraging bold, edgy visuals and a playful yet daring tone to target thrill-seekers, and spice enthusiasts on social media platforms"
+        },
+        {
+          "kind": "posts",
+          "files": [
+            "02.webp",
+            "03.webp",
+            "04.webp",
+            "05.webp",
+            "06.webp"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "Campaign Theme\nThe campaign revolves around the intensity of Herr’s Ghost Pepper Chips, using creative, exaggerated metaphors to convey the extreme heat of the chips"
+        },
+        {
+          "kind": "text",
+          "text": "Campaign Goals\n\nAwareness: Achieve 1M impressions across all platforms.\nEngagement: Increase likes, comments, and shares by 25%.\nSales: Boost sales of Herr’s Ghost Pepper Chips by 20% during the campaign period."
+        },
+        {
+          "kind": "compare",
+          "title": "BEFORE / AFTER",
+          "before": "10.webp",
+          "after": "04.webp"
+        },
+        {
+          "kind": "process",
+          "title": "DESIGN PROCESS",
+          "files": [
+            "08.gif"
+          ]
+        }
+      ]
+    },
+    // Castrol: one big centred column; the logo post (01.webp) is a compact dark card with a black-background copy of the logo
+    "213283067": {
+      bigPosts: true, compactPosts: ["01.webp"], darkPostFiles: ["01.webp"],
+      imageMap: { "01.webp": { f: "01_dark.webp", w: 1920, h: 368 } }
+    },
+    "257384531": { cinemaVariant: "gallery" },   // NABAT & HAGAT: festival-gallery cinema look, no overlay over images
+    "257552111": { hideSwatches: true, textStyle: "brief" },   // ATHAR: brandbook without the COLOR SYSTEM block
+    "191951149": { hideSwatches: true, textStyle: "skate" },   // SKATE MARKETPLACE: brandbook without the palette; text as skate deck stickers
+    "209950577": { hideSwatches: true },   // Full Brand — Strategy & Identity: brandbook without the COLOR SYSTEM block
+    // MIND MAP BOOK: tight full-resolution crops of the mockups (imageMap swaps body images only; cover untouched)
+    "193274055": {
+      wideSheets: true,
+      hideCover: true,
+      fitScreen: true,
+      imageMap: {
+        "01.webp": { f: "01_crop.webp", w: 2297, h: 1645 },
+        "02.webp": { f: "02_crop.webp", w: 1508, h: 2160 },
+        "03.webp": { f: "03_crop.webp", w: 1509, h: 2160 },
+        "04.webp": { f: "04_crop.webp", w: 1507, h: 2160 }
+      }
+    },
+    // hideImages: body image files (by file name) that are not shown; an image module left empty is dropped entirely
+    "231688193": { hideImages: ["01.webp"] },   // Virgin Mobile KSA logo on a white panel
+    // Little Majlis: the 6 social-media designs stay as feed posts; the 7 other files are presentation boards (story section)
+    "257647739": {
+      sections: [
+        {
+          "kind": "posts",
+          "files": [
+            "02.webp",
+            "03.webp",
+            "04.webp",
+            "05.webp",
+            "06.webp",
+            "07.webp"
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "THE BRAND STORY",
+          "files": [
+            "01.webp",
+            "08.webp",
+            "09.webp",
+            "10.webp",
+            "11.webp",
+            "12.webp",
+            "13.webp"
+          ]
+        }
+      ]
+    }
+  };
+  const $ = id => document.getElementById(id);
+  const pad = n => String(n).padStart(2, "0");
+  const FILTERS = [["all", "All"], ["branding", "Branding"], ["advertising", "Advertising"], ["social", "Social media"], ["print", "Print & merch"]];
+  const TURN = [-2, 1.5, -1, 2, -1.5];
+  const ROT = [-4, 3, -2, 5, -3, 2, -5, 4, -1, 3];
+  const MT = [0, 40, 12, 64, 24, 0, 48, 8, 36, 16];
+  const CAT = { branding: "Branding", advertising: "Advertising", social: "Social media", print: "Print & merch" };
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const pills = $("pills"), wall = $("wall"), viewer = $("viewer");
+  let projects = [], shown = [], filter = "all", current = -1, lastFocus = null;
+
+  function remember(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function recall(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+  function renderPills() {
+    pills.innerHTML = "";
+    FILTERS.forEach(([key, label], i) => {
+      const n = key === "all" ? projects.length : projects.filter(p => p.cat === key).length;
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "pill"; b.id = "pill-" + key;
+      b.style.setProperty("--r", TURN[i] + "deg");
+      b.setAttribute("aria-pressed", String(key === filter));
+      b.textContent = label + " " + pad(n);
+      b.addEventListener("click", () => { filter = key; remember("filter", key); renderPills(); renderWall(); $("pill-" + key).focus(); });
+      pills.appendChild(b);
+    });
+  }
+
+  function renderWall() {
+    shown = projects.filter(p => filter === "all" || p.cat === filter);
+    wall.innerHTML = "";
+    if (!shown.length) { const e = document.createElement("p"); e.className = "wall-empty"; e.textContent = "Nothing on this filter yet."; wall.appendChild(e); return; }
+    shown.forEach((p, i) => {
+      const cover = p.cover || p.images[0];
+      const k = i % 10;
+      const size = i < 3 ? "l" : i < 9 ? "m" : "s";
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "poster " + size + (i === 0 ? " first" : "") + (i % 4 === 1 ? " ov" : "");
+      b.style.setProperty("--rot", ROT[k] + "deg");
+      b.style.setProperty("--mt", MT[k] + "px");
+      b.setAttribute("aria-label", "Open " + p.title);
+      const img = document.createElement("img");
+      img.src = "img/" + p.id + "/" + cover.f; img.width = cover.w; img.height = cover.h; img.alt = "";
+      img.loading = i < 6 ? "eager" : "lazy"; img.decoding = "async";
+      const lab = document.createElement("span");
+      lab.className = "plabel" + (i % 5 === 4 ? " b" : i % 3 === 2 ? " o" : "");
+      const no = document.createElement("span"); no.className = "pno"; no.textContent = pad(i + 1);
+      const tt = document.createElement("span"); tt.className = "ptitle"; tt.textContent = p.title;
+      lab.append(no, tt);
+      b.append(img, lab);
+      if (i < 3) { const tp = document.createElement("span"); tp.className = "top-pick"; tp.textContent = "Top pick ★"; b.appendChild(tp); }
+      b.addEventListener("click", () => open(i));
+      wall.appendChild(b);
+    });
+  }
+
+  /* ---------- project viewer: one layout per project, built from the same parts ---------- */
+  const LAYOUTS = {
+    cinema: [257384531, 209067071, 257432161, 207535675, 231417951, 192309803],
+    brandbook: [257593433, 257552111, 257504101, 209950577, 191951149],
+    feed: [214580255, 213283067, 202239649, 257647739, 195870763, 192444175],
+    press: [242289729, 193274055, 192575769],
+    billboard: [231106453, 230613431, 206173977, 231688193, 231897363, 231747481, 231241201, 203996385]
+  };
+  const CAT_LAYOUT = { branding: "brandbook", advertising: "billboard", social: "feed", print: "press" };
+  const HEX = /^#[0-9a-f]{3,8}$/i;
+  const NS = "http://www.w3.org/2000/svg";
+  const ICON = {
+    heart: "M12 20.5l-1.4-1.3C5.6 14.6 2.5 11.8 2.5 8.3 2.5 5.5 4.7 3.5 7.4 3.5c1.6 0 3.1.8 4.6 2.2 1.5-1.4 3-2.2 4.6-2.2 2.7 0 4.9 2 4.9 4.8 0 3.5-3.1 6.3-8.1 10.9z",
+    comment: "M4 5h16v11H9l-5 4z",
+    plane: "M21 3L10 14M21 3l-7 18-4-7-7-4z",
+    bookmark: "M6 3h12v18l-6-4.5L6 21z"
+  };
+
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function svgEl(tag, attrs) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+  function icon(d) {
+    const s = svgEl("svg", { viewBox: "0 0 24 24", width: 22, height: 22, fill: "none", stroke: "currentColor", "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false" });
+    s.appendChild(svgEl("path", { d: d }));
+    return s;
+  }
+  function regTarget() {
+    const s = svgEl("svg", { class: "vreg", viewBox: "0 0 36 36", width: 36, height: 36, fill: "none", stroke: "#14121A", "stroke-width": 2, "aria-hidden": "true", focusable: "false" });
+    s.appendChild(svgEl("circle", { cx: 18, cy: 18, r: 14 }));
+    s.appendChild(svgEl("circle", { cx: 18, cy: 18, r: 5 }));
+    s.appendChild(svgEl("path", { d: "M18 0V36M0 18H36" }));
+    return s;
+  }
+  function layoutOf(p) {
+    const id = Number(p.id);
+    for (const k of Object.keys(LAYOUTS)) if (LAYOUTS[k].includes(id)) return k;
+    return CAT_LAYOUT[p.cat] || "billboard";
+  }
+  function imgEl(p, im, alt, eager) {
+    const img = new Image();
+    img.width = im.w; img.height = im.h;
+    img.loading = eager ? "eager" : "lazy"; img.decoding = "async";
+    img.alt = alt;
+    img.src = "img/" + p.id + "/" + im.f;
+    return img;
+  }
+  function safeHex(list) {
+    const seen = [];
+    list.forEach(h => { if (typeof h === "string" && HEX.test(h) && !seen.includes(h.toLowerCase())) seen.push(h.toLowerCase()); });
+    return seen;
+  }
+
+  function colourSystem(p) {
+    const pal = p.pal || {};
+    const hexes = safeHex([pal.dom, pal.accent, pal.dark].concat(pal.swatches || [])).slice(0, 6);
+    const box = el("div", "vsys");
+    box.appendChild(el("p", "vsys-l", "COLOR SYSTEM"));
+    const row = el("div", "vsws");
+    hexes.forEach(hex => {
+      const f = el("figure", "vsw");
+      const chip = el("span", "vchip");
+      chip.style.background = hex;
+      chip.setAttribute("aria-hidden", "true");
+      f.append(chip, el("figcaption", "", hex.toUpperCase()));
+      row.appendChild(f);
+    });
+    box.appendChild(row);
+    return box;
+  }
+
+  function colourBar(p) {
+    const pal = p.pal || {};
+    const bar = el("div", "vbar");
+    bar.setAttribute("aria-hidden", "true");
+    const squares = ["#00AEEF", "#EC008C", "#FFF200", "#000000"].concat([pal.dom, pal.accent, pal.dark, pal.light]);
+    squares.forEach(c => {
+      const s = el("span", "vsq");
+      if (typeof c === "string" && HEX.test(c)) s.style.background = c;
+      bar.appendChild(s);
+    });
+    bar.appendChild(regTarget());
+    return bar;
+  }
+
+  function buildHero(p, layout, ctx) {
+    const cover = p.cover || p.images[0];
+    const hero = el("section", "vhero");
+    const txt = el("div", "vhero-txt");
+    if (layout === "cinema") txt.appendChild(el("p", "vcredit", "A FILM BY ABDELRAHMAN EMAD"));
+    if (layout === "brandbook") txt.appendChild(el("p", "vsub", "Brand identity guidelines · Vol. 01"));
+    const kick = el("p", "vkick");
+    kick.append(el("span", "vnum", "#" + pad(ctx.pos)), el("span", "vcat", CAT[p.cat] || p.cat));
+    const parts = splitTitle(p.title);
+    const h = el("h3", "vhero-title", parts.big);
+    h.dir = "auto";
+    txt.append(kick, h);
+    if (parts.sub) {
+      const s = el("p", "vhero-sub", parts.sub);
+      s.dir = "auto";
+      txt.appendChild(s);
+    }
+    if (layout === "brandbook" && !PROJECT_OVERRIDES[p.id]?.hideSwatches) txt.appendChild(colourSystem(p));
+
+    const fig = el("figure", "vhero-cover");
+    if (!PROJECT_OVERRIDES[p.id]?.hideCover) {
+      const wrap = el("div", "vsheet-wrap");
+      const sheet = el("div", "vsheet");
+      sheet.appendChild(imgEl(p, cover, p.title + " – cover", true));
+      wrap.appendChild(sheet);
+      fig.appendChild(wrap);
+    }
+
+    if (layout === "billboard") {
+      const ghost = el("div", "vghost");
+      ghost.setAttribute("aria-hidden", "true");
+      const line = Array(4).fill(p.title.toUpperCase()).join("  ✶  ");
+      for (let i = 0; i < 3; i++) ghost.appendChild(el("span", null, line));
+      hero.appendChild(ghost);
+      fig.appendChild(el("span", "vsticker", "NEW CAMPAIGN"));
+    }
+    // default cinema hero: the title overlay sits inside the cover figure, so it shrink-wraps the displayed picture
+    if (layout === "cinema" && !PROJECT_OVERRIDES[p.id]?.cinemaVariant && fig.childNodes.length) fig.appendChild(txt);
+    else hero.append(txt);
+    if (fig.childNodes.length) hero.append(fig);
+    return hero;
+  }
+
+  // brandbook hero title: shrink (2px steps, not below 28px) until the longest word fits its column
+  function fitBrandTitle() {
+    const h = $("vBody").querySelector(".vhero-title");
+    if (!h || viewer.dataset.layout !== "brandbook") return;
+    h.style.fontSize = "";
+    let px = parseFloat(getComputedStyle(h).fontSize) || 0;
+    while (h.scrollWidth > h.clientWidth && px > 28) { px -= 2; h.style.fontSize = px + "px"; }
+  }
+  window.addEventListener("resize", () => { if (!viewer.hidden) fitBrandTitle(); });
+
+  function splitTitle(t) {
+    let at = -1, len = 0;
+    [" — ", " | "].forEach(s => {
+      const i = t.indexOf(s);
+      if (i > 0 && (at < 0 || i < at)) { at = i; len = s.length; }
+    });
+    if (at < 0) return { big: t, sub: "" };
+    return { big: t.slice(0, at), sub: t.slice(at + len).trim() };
+  }
+
+  // Brief card parsing: first Latin-only line = kicker; "label : value" = row; "label :" or ": label" followed by
+  // lines = block (label + joined paragraph); anything else = paragraph. Text is kept; only whitespace is trimmed.
+  const ARABIC_RE = /[؀-ۿ]/;
+  function splitColon(s) {
+    const i = s.search(/[:：]/);
+    if (i < 0) return null;
+    return { label: s.slice(0, i).trim(), value: s.slice(i + 1).trim() };
+  }
+  function briefParts(text) {
+    const lines = String(text || "").split("\n").map(s => s.trim());
+    const structural = s => { const kv = splitColon(s); return !!kv && !!(kv.label || kv.value); };
+    const parts = [];
+    let seenFirst = false;
+    for (let i = 0; i < lines.length; i++) {
+      const ln = lines[i];
+      if (!ln) continue;
+      const first = !seenFirst; seenFirst = true;
+      if (first && /[A-Za-z]/.test(ln) && !ARABIC_RE.test(ln) && !/[:：]/.test(ln)) { parts.push({ k: "kicker", t: ln }); continue; }
+      const kv = splitColon(ln);
+      if (kv && kv.label && kv.value) { parts.push({ k: "row", label: kv.label, value: kv.value }); continue; }
+      if (structural(ln)) {
+        const body = [];
+        let j = i + 1;
+        while (j < lines.length && lines[j] && !structural(lines[j])) body.push(lines[j++]);
+        parts.push({ k: "block", label: kv.label || kv.value, body: body });
+        i = j - 1;
+        continue;
+      }
+      parts.push({ k: "p", t: ln });
+    }
+    return parts;
+  }
+  function briefMod(text) {
+    const card = el("div", "vbrief");
+    card.dir = ARABIC_RE.test(String(text || "")) ? "rtl" : "ltr";
+    briefParts(text).forEach(p => {
+      if (p.k === "kicker") {
+        const kk = el("div", "vb-kick");
+        kk.append(el("span", null, p.t), el("span", "vb-rule"));
+        card.appendChild(kk);
+      } else if (p.k === "row") {
+        const r = el("div", "vb-row");
+        r.append(el("span", "vb-lbl", p.label), el("span", "vb-val", p.value));
+        card.appendChild(r);
+      } else if (p.k === "block") {
+        const b = el("div", "vb-block");
+        b.appendChild(el("p", "vb-lbl", p.label));
+        if (p.body.length) b.appendChild(el("p", "vb-p", p.body.join(" ")));
+        card.appendChild(b);
+      } else {
+        card.appendChild(el("p", "vb-p", p.t));
+      }
+    });
+    return card;
+  }
+
+  // Skate deck stickers (textStyle "skate"): a black pill-shaped deck per text module, headline, sticker chips for comma lists
+  let skateIdx = 0;
+  const SK_CHIP_BG = ["#EE692B", "#8FB4BB", "#F4F4F4"];
+  const SK_CHIP_ROT = [-3, 2, -4, 3, -2, 4, -1, 2];
+  const SK_INVISIBLE = /[​-‍﻿]/g;
+  function skateList(line) {
+    // "lead-in, item, item, item, item[, ...tail]": needs >= 4 short items after the first comma-separated part
+    const segs = line.split(",").map(s => s.trim());
+    if (segs.length < 5) return null;
+    const lead = segs[0];
+    const rest = segs.slice(1);
+    let tail = "";
+    const last = rest[rest.length - 1];
+    const ell = last.search(/\.\.\.|…/);
+    if (ell >= 0) { tail = last.slice(ell).trim(); rest[rest.length - 1] = last.slice(0, ell).trim(); }
+    if (!rest[rest.length - 1]) rest.pop();
+    if (rest.length < 4 || rest.some(s => !s || s.split(/\s+/).length > 3 || s.length > 30)) return null;
+    return { lead, items: rest, tail };
+  }
+  function skateMod(text) {
+    const idx = skateIdx++;
+    const deck = el("div", "vskate " + (idx % 2 ? "tilt-b" : "tilt-a"));
+    deck.dir = "auto";
+    ["l1", "l2", "r1", "r2"].forEach(c => {
+      const b = el("span", "vsk-bolt " + c);
+      b.setAttribute("aria-hidden", "true");
+      deck.appendChild(b);
+    });
+    const lines = String(text || "").split("\n").map(s => s.replace(SK_INVISIBLE, "").trim()).filter(Boolean);
+    let chipSet = 0;
+    lines.forEach((ln, i) => {
+      if (i === 0 && (ln.length <= 40 || (ln === ln.toUpperCase() && /[A-Z]/.test(ln)))) { deck.appendChild(el("h3", "vsk-h", ln)); return; }
+      if (ln === "&") { deck.appendChild(el("div", "vsk-amp", "&")); return; }
+      const lst = skateList(ln);
+      if (!lst) { deck.appendChild(el("p", "vsk-p", ln)); return; }
+      deck.appendChild(el("p", "vsk-p", lst.lead));
+      const chips = el("div", "vsk-chips");
+      lst.items.forEach((item, k) => {
+        const c = el("span", "vsk-chip", item);
+        c.style.background = SK_CHIP_BG[k % 3];
+        c.style.setProperty("--rot", "rotate(" + SK_CHIP_ROT[(k + chipSet) % SK_CHIP_ROT.length] + "deg)");
+        chips.appendChild(c);
+      });
+      chipSet++;
+      deck.appendChild(chips);
+      if (lst.tail) deck.appendChild(el("p", "vsk-p", lst.tail));
+    });
+    return deck;
+  }
+
+  function textMod(m, layout, p) {
+    if (p && PROJECT_OVERRIDES[p.id]?.textStyle === "skate") return skateMod(m.text);
+    if (p && PROJECT_OVERRIDES[p.id]?.textStyle === "brief") return briefMod(m.text);
+    const d = el("div", "vtext", m.text);
+    d.dir = "auto";
+    d.dataset.align = m.align || "left";
+    if (layout === "billboard") d.classList.add((m.text || "").length <= 60 ? "slogan-big" : "slogan-small");
+    return d;
+  }
+
+  function imgMod(p, m, layout, ctx) {
+    const kept = m.items.filter(raw => !hiddenImg(p, raw.f));
+    if (!kept.length) return null;   // every image hidden: no empty frame or panel
+    // bigPosts (feed): a multi-image module is split, one post card per image, in order
+    if (layout === "feed" && PROJECT_OVERRIDES[p.id]?.bigPosts && kept.length > 1) {
+      const frag = document.createDocumentFragment();
+      kept.forEach(raw => frag.appendChild(imgMod(p, { t: "img", items: [raw] }, layout, ctx)));
+      return frag;
+    }
+    const n = kept.length;
+    ctx.n++;
+    const mod = el("section", "vmod" + (n > 1 ? " multi" : ""));
+    const items = el("div", "vitems" + (n > 1 ? " multi" : ""));
+    kept.forEach(raw => {
+      const im = bodyImg(p, raw);
+      const fig = el("figure", "vitem");
+      const eager = ctx.eager > 0;
+      if (eager) ctx.eager--;
+      const gallery = PROJECT_OVERRIDES[p.id]?.cinemaVariant === "gallery";
+      if (gallery && im.w && im.h) fig.style.setProperty("--ar", (im.w / im.h).toFixed(4));
+      const pic = imgEl(p, im, p.title + " – image " + (++ctx.k), eager || gallery);
+      zoomable(pic);
+      fig.appendChild(pic);
+      if (layout === "brandbook") fig.appendChild(el("figcaption", "vfcap", "FIG. " + pad(++ctx.figs)));
+      items.appendChild(fig);
+    });
+
+    if (layout === "cinema") {
+      mod.append(el("p", "vlabel", "SCENE " + pad(ctx.n) + " — TAKE 1"), items);
+      if (PROJECT_OVERRIDES[p.id]?.cinemaVariant === "gallery") mod.appendChild(sceneFoot(p, ctx.n));
+    } else if (layout === "press") {
+      mod.appendChild(el("p", "vlabel", "PRINT PROOF " + pad(ctx.n) + " · APPROVED"));
+      const wrap = el("div", "vsheet-wrap");
+      const sheet = el("div", "vsheet");
+      sheet.appendChild(items);
+      wrap.appendChild(sheet);
+      if (ctx.n % 2 === 0) wrap.appendChild(el("span", "vstamp", "OK ✓"));
+      mod.appendChild(wrap);
+    } else if (layout === "feed") {
+      mod.classList.add("vpost", ctx.n % 2 ? "tilt-a" : "tilt-b");
+      const compact = PROJECT_OVERRIDES[p.id]?.compactPosts;
+      if (Array.isArray(compact) && kept.length === 1 && compact.includes(kept[0].f)) mod.classList.add("vpost-compact");
+      const darkFiles = PROJECT_OVERRIDES[p.id]?.darkPostFiles;
+      if (Array.isArray(darkFiles) && kept.length === 1 && darkFiles.includes(kept[0].f)) mod.classList.add("vpost-dark");
+      const head = el("header", "vpost-h");
+      const av = new Image();
+      av.width = 32; av.height = 32; av.className = "vav";
+      av.src = "img/me.jpg"; av.alt = ""; av.loading = "lazy"; av.decoding = "async";
+      head.append(av, el("b", "vhandle", "@abdelrahman.emad"), el("span", "vspon", "SPONSORED"));
+      const acts = el("div", "vpost-a");
+      acts.append(icon(ICON.heart), icon(ICON.comment), icon(ICON.plane), icon(ICON.bookmark));
+      mod.append(head, items, acts, el("p", "vlike", "★ LIKED BY THE CLIENT"));
+    } else {
+      mod.appendChild(items);
+    }
+
+    // details: after each body image that has 100% crops, add a DETAIL row inside the same module
+    kept.forEach(raw => {
+      const det = PROJECT_OVERRIDES[p.id]?.details?.[raw.f];
+      if (det && det.length) mod.appendChild(detailRow(p, raw.f, det));
+    });
+
+    if (layout === "brandbook" && n === 1) {
+      const s = ctx.singles++;
+      mod.classList.add(s % 4 === 1 ? "w-l" : s % 4 === 3 ? "w-r" : "w-full");
+    }
+    if (layout === "billboard" && n === 1) mod.classList.add(ctx.n % 2 ? "bl" : "br");
+    return mod;
+  }
+
+  // hideImages: a body image whose file name is listed in PROJECT_OVERRIDES is not rendered
+  function hiddenImg(p, f) {
+    const list = PROJECT_OVERRIDES[p.id]?.hideImages;
+    return Array.isArray(list) && list.includes(f);
+  }
+  // imageMap: a body image may be swapped for a sharper copy (file name + size) per project
+  function bodyImg(p, im) {
+    const map = PROJECT_OVERRIDES[p.id]?.imageMap;
+    const r = im && map ? map[im.f] : null;
+    return r ? { f: r.f, w: r.w, h: r.h } : im;
+  }
+  // click / Enter on a body image opens the lightbox (defined below)
+  function zoomable(img) {
+    img.classList.add("zoomable");
+    img.tabIndex = 0;
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge image" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", () => lbOpen(img));
+    img.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); lbOpen(img); } });
+  }
+
+  // details: 100% crops (two panels per body image) rendered under the proof; each opens the lightbox like a body image
+  function detailRow(p, key, list) {
+    const row = el("div", "vdetail");
+    const num = key.replace(/\D.*$/, "");
+    list.forEach((d, i) => {
+      const side = "AB"[i];
+      const panel = el("figure", "vdsheet");
+      panel.appendChild(el("p", "vdlabel", "DETAIL " + num + "-" + side + " · 100%"));
+      const img = imgEl(p, { f: d.f, w: d.w, h: d.h }, p.title + " – detail " + num + "-" + side, false);
+      zoomable(img);
+      panel.appendChild(img);
+      row.appendChild(panel);
+    });
+    return row;
+  }
+
+  function imagesFor(p, files) {
+    const out = [];
+    (files || []).forEach(f => {
+      const im = (p.images || []).find(x => x.f === f);
+      if (!im) console.warn("Section file not found: " + f);
+      else if (!hiddenImg(p, im.f)) out.push(im);
+    });
+    return out;
+  }
+
+  // "compare" section: BEFORE/AFTER frame that auto-switches every 2.6s.
+  // Only one project is on screen at a time, so a single module-level timer is enough; open() and close() clear it.
+  let cmpTimer = null;
+  function stopCompare() { if (cmpTimer) { clearInterval(cmpTimer); cmpTimer = null; } }
+  function compareSection(p, s) {
+    const bf = bodyImg(p, imagesFor(p, [s.before])[0]), af = bodyImg(p, imagesFor(p, [s.after])[0]);
+    if (!bf || !af) return null;
+    // frame ratio comes from the taller image (larger h/w), so neither image is cropped
+    const tall = bf.h / bf.w >= af.h / af.w ? bf : af;
+    const sec = el("section", "vsec vsec-compare");
+    const head = el("header", "vsec-head");
+    head.append(el("p", "vsec-kick", "BEHIND THE SCENES"), el("h2", "vsec-h", s.title || ""));
+
+    const frame = el("div", "vcmp-frame");
+    frame.style.aspectRatio = tall.w + " / " + tall.h;
+    frame.style.setProperty("--ar", (tall.w / tall.h).toFixed(4));
+    const imgB = imgEl(p, bf, p.title + " – before", false); imgB.classList.add("vcmp-img", "vcmp-before");
+    const imgA = imgEl(p, af, p.title + " – after", false); imgA.classList.add("vcmp-img", "vcmp-after");
+    const chip = el("span", "vcmp-state");
+    frame.append(imgB, imgA, chip);
+
+    const btnB = el("button", "btn vcmp-btn", "BEFORE");
+    const btnA = el("button", "btn vcmp-btn", "AFTER");
+    btnB.type = "button"; btnA.type = "button";
+    const ctrl = el("div", "vcmp-ctrl");
+    ctrl.append(btnB, btnA);
+    const wrap = el("div", "vcmp");
+    wrap.append(frame, ctrl);
+    sec.append(head, wrap);
+
+    let state = "before", paused = false, manual = false;
+    const set = st => {
+      state = st;
+      frame.dataset.state = st;
+      chip.dataset.s = st;
+      chip.textContent = st === "after" ? "AFTER" : "BEFORE";
+      btnB.setAttribute("aria-pressed", String(st === "before"));
+      btnA.setAttribute("aria-pressed", String(st === "after"));
+    };
+    const flip = () => set(state === "before" ? "after" : "before");
+    const start = () => {
+      stopCompare();
+      if (reduce || paused || manual) return;
+      cmpTimer = setInterval(() => {
+        if (!frame.isConnected) return stopCompare();
+        flip();
+      }, 2600);
+    };
+    // a button press or a frame click is a manual choice: auto-switch stays off for this project
+    const pick = st => { manual = true; stopCompare(); set(st); };
+    btnB.addEventListener("click", () => pick("before"));
+    btnA.addEventListener("click", () => pick("after"));
+    frame.addEventListener("click", () => { manual = true; stopCompare(); flip(); });
+    frame.addEventListener("pointerenter", () => { paused = true; stopCompare(); });
+    frame.addEventListener("pointerleave", () => { paused = false; start(); });
+    set("before");
+    start();
+    return sec;
+  }
+
+  // One override section into the flow: "text" (chat bubble), "posts" (feed cards, same as p.mods),
+  // "beforeafter" / "process" (full-width panels, not posts), "compare" (auto-switching before/after frame),
+  // "story" (full-width presentation boards, one per file: no post chrome, opens the lightbox on click).
+  function sectionTo(flow, p, s, layout, ctx) {
+    if (s.kind === "text") {
+      if (s.text) flow.appendChild(textMod({ text: s.text, align: "left" }, layout, p));
+      return;
+    }
+    if (s.kind === "posts") {
+      imagesFor(p, s.files).forEach(im => flow.appendChild(imgMod(p, { t: "img", items: [im] }, layout, ctx)));
+      return;
+    }
+    if (s.kind === "story") {
+      const ims = imagesFor(p, s.files);
+      if (!ims.length) return;
+      const sec = el("section", "vsec vsec-story");
+      const head = el("header", "vsec-head");
+      head.append(el("p", "vsec-kick", "BEHIND THE CAMPAIGN"), el("h2", "vsec-h", s.title || ""));
+      const boards = el("div", "vboards");
+      ims.forEach((im, i) => {
+        const fig = el("figure", "vboard");
+        const frame = el("div", "vboard-frame");
+        const pic = imgEl(p, bodyImg(p, im), p.title + " – board " + pad(i + 1), false);
+        zoomable(pic);
+        frame.appendChild(pic);
+        fig.append(frame, el("figcaption", "vboard-cap", "BOARD " + pad(i + 1)));
+        boards.appendChild(fig);
+      });
+      sec.append(head, boards);
+      flow.appendChild(sec);
+      return;
+    }
+    if (s.kind === "compare") {
+      const sec = compareSection(p, s);
+      if (sec) flow.appendChild(sec);
+      return;
+    }
+    if (s.kind === "beforeafter" || s.kind === "process") {
+      const ims = imagesFor(p, s.files);
+      if (!ims.length) return;
+      const sec = el("section", "vsec vsec-" + s.kind);
+      const head = el("header", "vsec-head");
+      head.append(el("p", "vsec-kick", "BEHIND THE SCENES"), el("h2", "vsec-h", s.title || ""));
+      const grid = el("div", "vsec-grid");
+      ims.forEach(im => {
+        const fig = el("figure", "vsec-panel");
+        const pic = imgEl(p, bodyImg(p, im), p.title + " – " + (s.title || s.kind) + " " + (++ctx.k), false);
+        zoomable(pic);
+        fig.appendChild(pic);
+        if (s.kind === "beforeafter") fig.appendChild(el("span", "vsec-chip", "BEFORE → AFTER"));
+        grid.appendChild(fig);
+      });
+      sec.append(head, grid);
+      flow.appendChild(sec);
+    }
+  }
+
+  // gallery variant only: label + project title under each scene card, on an accent rule
+  function sceneFoot(p, n) {
+    const f = el("p", "vscene-foot");
+    const title = el("span", null, p.title);
+    title.dir = "auto";
+    f.append(el("span", null, "SCENE " + pad(n)), title);
+    return f;
+  }
+
+  function buildOutro(nextP, layout) {
+    const o = el("section", "voutro");
+    if (layout === "cinema") o.appendChild(el("p", "vend", "THE END"));
+    const nb = el("button", "vnext");
+    nb.type = "button";
+    const nc = nextP.cover || nextP.images[0];
+    const tx = el("span", "vnext-x");
+    tx.appendChild(el("span", "vnext-l", "NEXT PROJECT →"));
+    const nt = el("span", "vnext-t", nextP.title);
+    nt.dir = "auto";
+    tx.appendChild(nt);
+    nb.append(imgEl(nextP, nc, nextP.title + " – cover", false), tx);
+    nb.addEventListener("click", () => open(current + 1));
+    const back = el("button", "btn vback", "BACK TO THE WALL");
+    back.type = "button";
+    back.addEventListener("click", close);
+    o.append(nb, back);
+    return o;
+  }
+
+  function open(i) {
+    if (!shown.length) return;
+    stopCompare();
+    if (viewer.hidden) lastFocus = document.activeElement;
+    current = (i + shown.length) % shown.length;
+    const p = shown[current];
+    const layout = layoutOf(p);
+    const pal = p.pal || {};
+    viewer.dataset.layout = layout;
+    if (layout === "press" && PROJECT_OVERRIDES[p.id]?.wideSheets) viewer.dataset.wide = "true"; else viewer.removeAttribute("data-wide");
+    if (layout === "press" && PROJECT_OVERRIDES[p.id]?.fitScreen) viewer.dataset.fit = "true"; else viewer.removeAttribute("data-fit");
+    const variant = PROJECT_OVERRIDES[p.id]?.cinemaVariant;
+    if (variant) viewer.dataset.variant = variant; else viewer.removeAttribute("data-variant");
+    const vars = { "--p-dom": "dom", "--p-accent": "accent", "--p-dark": "dark", "--p-light": "light", "--p-on-dom": "onDom", "--p-on-accent": "onAccent" };
+    Object.keys(vars).forEach(v => {
+      if (typeof pal[vars[v]] === "string" && HEX.test(pal[vars[v]])) viewer.style.setProperty(v, pal[vars[v]]);
+      else viewer.style.removeProperty(v);
+    });
+    // per-project flags: bg = page colour (light text, dark accent-bubble text for contrast), darkCards, bigPosts
+    const pov = PROJECT_OVERRIDES[p.id] || {};
+    if (HEX.test(pov.bg || "")) {
+      viewer.dataset.bg = "true";
+      viewer.style.setProperty("--p-bg", pov.bg);
+      viewer.style.setProperty("--p-on-dom", "#F2EFE8");
+      viewer.style.setProperty("--p-on-accent", "#14121A");
+    } else { viewer.removeAttribute("data-bg"); viewer.style.removeProperty("--p-bg"); }
+    if (pov.darkCards) viewer.dataset.darkCards = "true"; else viewer.removeAttribute("data-dark-cards");
+    if (pov.bigPosts) viewer.dataset.bigPosts = "true"; else viewer.removeAttribute("data-big-posts");
+    $("vTitle").textContent = p.title;
+    $("vMeta").textContent = (CAT[p.cat] || p.cat) + " · " + pad(p.images.length) + " IMAGES · " + pad(current + 1) + "/" + pad(shown.length);
+    $("vBehance").href = p.url; // real <a target=_blank>; href set per project
+
+    const body = $("vBody");
+    body.innerHTML = "";
+    skateIdx = 0;
+    const ctx = { pos: current + 1, n: 0, k: 0, figs: 0, singles: 0, eager: 1 };
+    if (layout === "press") body.appendChild(colourBar(p));
+    if (!PROJECT_OVERRIDES[p.id]?.hideHero) body.appendChild(buildHero(p, layout, ctx));
+    const flow = el("div", "vmods");
+    const ov = PROJECT_OVERRIDES[p.id] || {};
+    if (Array.isArray(ov.sections) && ov.sections.length) {
+      ov.sections.forEach(s => sectionTo(flow, p, s, layout, ctx));
+    } else {
+      const mods = p.mods && p.mods.length ? p.mods : [{ t: "img", items: p.images }];
+      mods.forEach(m => {
+        if (m.t === "text") flow.appendChild(textMod(m, layout, p));
+        else if (m.items && m.items.length) {
+          const imod = imgMod(p, m, layout, ctx);
+          if (imod) flow.appendChild(imod);
+        }
+      });
+    }
+    body.appendChild(flow);
+    body.appendChild(buildOutro(shown[(current + 1) % shown.length], layout));
+
+    viewer.hidden = false; viewer.scrollTop = 0;
+    document.body.style.overflow = "hidden";
+    $("vClose").focus();
+    fitBrandTitle();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitBrandTitle);
+    if (history.replaceState) history.replaceState(null, "", "#p" + p.id);
+  }
+
+  function close() {
+    stopCompare();
+    viewer.hidden = true; document.body.style.overflow = "";
+    if (history.replaceState) history.replaceState(null, "", "#work");
+    if (lastFocus) { lastFocus.focus(); lastFocus = null; }
+  }
+
+  // ---------- click-to-zoom lightbox: fit by default, click the image for actual size (pannable) ----------
+  const lb = $("lightbox"), lbImg = $("lbImg"), lbClose = $("lbClose");
+  let lbFrom = null, lbActual = false;
+  function lbSetMode(actual) {
+    lbActual = actual;
+    lb.classList.toggle("is-actual", actual);
+    if (actual) {
+      const nw = lbFrom ? (lbFrom.naturalWidth || Number(lbFrom.getAttribute("width")) || 0) : 0;
+      lbImg.style.width = nw ? nw + "px" : "auto";
+    } else lbImg.style.width = "";
+  }
+  function lbOpen(img) {
+    lbFrom = img;
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    lb.hidden = false;
+    lbSetMode(false);
+    lbClose.focus();
+  }
+  function lbHide() {
+    lb.hidden = true;
+    lbSetMode(false);
+    lbImg.removeAttribute("src");
+    if (lbFrom) { lbFrom.focus(); lbFrom = null; }
+  }
+  lbImg.addEventListener("click", () => lbSetMode(!lbActual));
+  lbClose.addEventListener("click", lbHide);
+  // capture phase: while the lightbox is open, Escape and arrows act on the lightbox only, never on the project viewer
+  document.addEventListener("keydown", e => {
+    if (lb.hidden) return;
+    e.stopPropagation();
+    if (e.key === "Escape") lbHide();
+  }, true);
+
+  $("vClose").addEventListener("click", close);
+  $("vPrev").addEventListener("click", () => open(current - 1));
+  $("vNext").addEventListener("click", () => open(current + 1));
+  document.addEventListener("keydown", e => {
+    if (viewer.hidden) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowRight") open(current + 1);
+    else if (e.key === "ArrowLeft") open(current - 1);
+  });
+
+  // copy buttons: clipboard inside the click handler, selection fallback
+  document.querySelectorAll("[data-copy]").forEach(btn => {
+    const label = btn.textContent;
+    btn.addEventListener("click", () => {
+      const el = $(btn.dataset.copy);
+      const text = el.textContent.trim();
+      const fail = () => {
+        const r = document.createRange(); r.selectNodeContents(el);
+        const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = "PRESS CTRL+C";
+        setTimeout(() => (btn.textContent = label), 2200);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = "COPIED!";
+          setTimeout(() => (btn.textContent = label), 1600);
+        }, fail);
+      } else fail();
+    });
+  });
+
+  // custom cursor: desktop with hover and motion allowed only
+  if (matchMedia("(hover: hover)").matches && !reduce) {
+    const cur = $("cursor");
+    cur.hidden = false;
+    addEventListener("pointermove", e => { cur.style.left = e.clientX + "px"; cur.style.top = e.clientY + "px"; }, { passive: true });
+    document.addEventListener("pointerover", e => {
+      const over = e.target && e.target.closest ? e.target.closest("a,button") : null;
+      cur.classList.toggle("big", !!over);
+    });
+  }
+
+  // projects: inline JSON, already in the owner's order
+  const data = JSON.parse($("projects-data").textContent);
+  projects = data.filter(p => p.images && p.images.length);
+  $("count").textContent = projects.length + " PROJECTS · BEST FIRST · CLICK ANY POSTER";
+  let f = recall("filter") || "all";
+  if (!FILTERS.some(x => x[0] === f)) f = "all";
+  filter = f;
+  renderPills(); renderWall();
+  const m = location.hash.match(/^#p(\d+)$/);
+  if (m) {
+    filter = "all"; renderPills(); renderWall();
+    const i = shown.findIndex(p => String(p.id) === m[1]);
+    if (i >= 0) open(i);
+  }
+})();
+</script>
+
+<script>
+(function () {
+  "use strict";
+  // AI video reels: nothing is loaded until a reel is clicked (or Enter/Space on its button).
+  const grid = document.getElementById("reelsGrid");
+  const dataEl = document.getElementById("reels-data");
+  if (!grid || !dataEl) return;
+  const reels = JSON.parse(dataEl.textContent);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const fmt = sec => {
+    const s = Math.round(sec);
+    return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+  };
+
+  grid.innerHTML = reels.map((r, i) => `
+    <div class="reel" data-i="${i}" style="--ar:${r.w} / ${r.h}">
+      <button class="reel-frame" type="button" aria-label="Play ${esc(r.title)}">
+        <img src="${esc(r.poster)}" width="${r.w}" height="${r.h}" loading="lazy" decoding="async" alt="">
+        <span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+      </button>
+      <div class="reel-meta"><span class="reel-title">${esc(r.title)}</span><span class="reel-dur">${fmt(r.duration)}</span></div>
+    </div>`).join("");
+
+  function startReel(card) {
+    if (card.querySelector("video")) return;
+    const r = reels[+card.dataset.i];
+    const frame = card.querySelector("button.reel-frame");
+    if (!r || !frame) return;
+
+    const live = document.createElement("div");
+    live.className = "reel-frame reel-live is-loading";
+    const v = document.createElement("video");
+    v.src = r.file;
+    v.poster = r.poster;
+    v.controls = true;
+    v.playsInline = true;
+    v.preload = "auto";
+    v.autoplay = true;
+    v.setAttribute("aria-label", r.title);
+    const spin = document.createElement("span");
+    spin.className = "reel-spin";
+    spin.setAttribute("aria-hidden", "true");
+    live.append(v, spin);
+    frame.replaceWith(live);
+    card.classList.add("is-playing");
+
+    v.addEventListener("play", () => {
+      // only one reel plays at a time
+      grid.querySelectorAll("video").forEach(o => { if (o !== v && !o.paused) o.pause(); });
+    });
+    v.addEventListener("playing", () => live.classList.remove("is-loading"));
+    v.addEventListener("waiting", () => live.classList.add("is-loading"));
+    v.addEventListener("error", () => {
+      live.classList.remove("is-loading");
+      live.classList.add("is-error");
+    });
+    v.focus({ preventScroll: true });
+    const p = v.play();
+    if (p && p.catch) p.catch(() => { live.classList.remove("is-loading"); });
+  }
+
+  grid.addEventListener("click", e => {
+    const btn = e.target.closest("button.reel-frame");
+    if (!btn || !grid.contains(btn)) return;
+    startReel(btn.closest(".reel"));
+  });
+})();
+</script>
+</body>
+</html>
